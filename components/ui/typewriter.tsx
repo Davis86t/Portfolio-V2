@@ -18,7 +18,7 @@ export default function Typewriters() {
               .typeString("Developer")
               .pauseFor(500)
               .deleteChars(9)
-              .typeString("Software Engineer")
+              .typeString("Software Engineer.")
               .pauseFor(1500)
               .start()
           }}
