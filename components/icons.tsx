@@ -6,11 +6,13 @@ import {
   Twitter,
   Linkedin,
   type Icon as LucideIcon,
+  Menu,
 } from "lucide-react"
 
 export type Icon = LucideIcon
 
 export const Icons = {
+  menu: Menu,
   sun: SunMedium,
   moon: Moon,
   laptop: Laptop,

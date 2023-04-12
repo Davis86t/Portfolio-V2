@@ -53,8 +53,8 @@ export function MainNav({ items }: MainNavProps) {
             variant="ghost"
             className="-ml-4 text-base hover:bg-transparent focus:ring-0 md:hidden"
           >
-            {/* <Icons.logo className="mr-2 h-4 w-4" />{" "} */}
-            <span className="font-bold">Menu</span>
+            <Icons.menu className="mr-2 h-6 w-6" />{" "}
+            {/* <span className="font-bold">Menu</span> */}
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent
