@@ -7,7 +7,7 @@ export default function Typewriters() {
       <h1 className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
         <Typewriter
           options={{
-            loop: true,
+            loop: false,
           }}
           onInit={(typewriter) => {
             typewriter
@@ -18,6 +18,9 @@ export default function Typewriters() {
               .typeString("Developer")
               .pauseFor(500)
               .deleteChars(9)
+              .typeString("Leader")
+              .pauseFor(500)
+              .deleteChars(6)
               .typeString("Software Engineer.")
               .pauseFor(1500)
               .start()

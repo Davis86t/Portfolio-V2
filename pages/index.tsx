@@ -59,6 +59,26 @@ export default function IndexPage() {
           </Link> */}
         </div>
       </section>
+      <section className="align-middle container grid items-center gap-6 pt-6 pb-8 md:py-10">
+      <div className="flex gap-4">
+      <Link
+            href={siteConfig.links.docs}
+            target="_blank"
+            rel="noreferrer"
+            className={buttonVariants({ size: "lg" })}
+          >
+            Send me a message!
+          </Link>
+                    <Link
+            target="_blank"
+            rel="noreferrer"
+            href={siteConfig.links.linkedin}
+            className={buttonVariants({ variant: "outline", size: "lg" })}
+          >
+            Connect on LinkedIn
+          </Link>
+          </div>
+      </section>
     </Layout>
   )
 }
