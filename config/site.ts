@@ -17,18 +17,18 @@ export const siteConfig: SiteConfig = {
   description:
     "Tanner Davis' personal website. I'm a software engineer and I love to build things.",
   mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
-    {
-      title: "Contact",
-      href: "/",
-    },
-    {
-      title: "Projects",
-      href: "/",
-    },
+    // {
+    //   title: "Home",
+    //   href: "/",
+    // },
+    // {
+    //   title: "Contact",
+    //   href: "/",
+    // },
+    // {
+    //   title: "Projects",
+    //   href: "/",
+    // },
   ],
   links: {
     twitter: "https://twitter.com/shadcn",

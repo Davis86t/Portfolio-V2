@@ -5,8 +5,7 @@ import { siteConfig } from "@/config/site"
 import { Layout } from "@/components/layout"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { buttonVariants } from "@/components/ui/button"
-import Typewriters from "@/components/ui/typewriter"
-import { Typewriters2 } from "@/components/ui/typewriter"
+import Typewriters, { Typewriters2 } from "@/components/ui/typewriter"
 
 export default function IndexPage() {
   return (
@@ -20,7 +19,7 @@ export default function IndexPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="align-middle container grid items-center gap-6 pt-4 pb-6 md:py-10">
+      <section className="align-middle container grid items-center gap-6 pt-4 pb-6 md:py-10 mt-8">
         <div className="flex flex-col md:flex-row items-center gap-6">
           <Avatar>
             <AvatarImage
@@ -60,14 +59,14 @@ export default function IndexPage() {
         </div>
       </section>
       <section className="align-middle container grid items-center gap-6 md:py-10 mb-8">
-        <div className="flex gap-4">
+        <div className="flex gap-4 justify-center md:justify-normal">
           <Link
-            href={siteConfig.links.docs}
+            href={siteConfig.links.linkedin}
             target="_blank"
             rel="noreferrer"
             className={buttonVariants({ size: "lg" })}
           >
-            Send Me a Message!
+            Red Pill
           </Link>
           <Link
             target="_blank"
@@ -75,19 +74,32 @@ export default function IndexPage() {
             href={siteConfig.links.linkedin}
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
-            Connect on LinkedIn
+            Blue Pill
           </Link>
         </div>
       </section>
-
-      <div className="container grid gap-6 py-10 md:py-16 justify-end">
+      {/* <div className="md:hidden flex flex-row justify-around">
+        <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+          ⇣
+        </h5>
+        <h5></h5>
+        <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+          ⇣
+        </h5>
+      </div> */}
+{/* <div>
+  <h5 className="pt-40 text-2xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl mb-2">
+    Projects Bitch Is this a Title
+  </h5>
+</div> */}
+      {/* <div className="container grid gap-6 py-10 md:py-16 justify-end">
         <div className="flex flex-col items-center gap-6">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
             Projects
           </h2>
 <Typewriters2 />
         </div>
-      </div>
+      </div> */}
     </Layout>
   )
 }
