@@ -30,3 +30,24 @@ export default function Typewriters() {
     </div>
   )
 }
+
+function Typewriters2() {
+  return (
+    <div>
+      <h1 className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
+        <Typewriter
+          options={{
+            loop: false,
+          }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("I have experience with a variety of technologies and frameworks.")
+              .start()
+          }}
+        />
+      </h1>
+    </div>
+  )
+}
+
+export { Typewriters2 }

@@ -6,6 +6,7 @@ import { Layout } from "@/components/layout"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { buttonVariants } from "@/components/ui/button"
 import Typewriters from "@/components/ui/typewriter"
+import { Typewriters2 } from "@/components/ui/typewriter"
 
 export default function IndexPage() {
   return (
@@ -19,9 +20,9 @@ export default function IndexPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="align-middle container grid items-center gap-6 pt-6 pb-8 md:py-10">
+      <section className="align-middle container grid items-center gap-6 pt-4 pb-6 md:py-10">
         <div className="flex flex-col md:flex-row items-center gap-6">
-        <Avatar>
+          <Avatar>
             <AvatarImage
               src="https://github.com/davis86t.png"
               alt="Tanner Davis"
@@ -37,7 +38,6 @@ export default function IndexPage() {
             Thank you for taking the time to check out my personal website. I am a full-stack developer with a passion for building web applications. I am currently looking for a full-time position as a software engineer. If you are interested in learning more about me, please feel free to reach out.
           </p> */}
           </div>
-
         </div>
 
         <div className="flex gap-4">
@@ -59,17 +59,17 @@ export default function IndexPage() {
           </Link> */}
         </div>
       </section>
-      <section className="align-middle container grid items-center gap-6 pt-6 pb-8 md:py-10">
-      <div className="flex gap-4">
-      <Link
+      <section className="align-middle container grid items-center gap-6 md:py-10 mb-8">
+        <div className="flex gap-4">
+          <Link
             href={siteConfig.links.docs}
             target="_blank"
             rel="noreferrer"
             className={buttonVariants({ size: "lg" })}
           >
-            Send me a message!
+            Send Me a Message!
           </Link>
-                    <Link
+          <Link
             target="_blank"
             rel="noreferrer"
             href={siteConfig.links.linkedin}
@@ -77,8 +77,17 @@ export default function IndexPage() {
           >
             Connect on LinkedIn
           </Link>
-          </div>
+        </div>
       </section>
+
+      <div className="container grid gap-6 py-10 md:py-16 justify-end">
+        <div className="flex flex-col items-center gap-6">
+          <h2 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            Projects
+          </h2>
+<Typewriters2 />
+        </div>
+      </div>
     </Layout>
   )
 }
