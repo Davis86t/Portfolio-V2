@@ -61,24 +61,24 @@ export default function IndexPage() {
       <section className="align-middle container grid items-center gap-6 md:py-10 mb-8">
         <div className="flex gap-4 justify-center md:justify-normal">
           <Link
-            href={siteConfig.links.linkedin}
+            href={siteConfig.links.button1}
             target="_blank"
             rel="noreferrer"
             className={buttonVariants({ size: "lg" })}
           >
-            Red Pill
+            Button 1
           </Link>
           <Link
             target="_blank"
             rel="noreferrer"
-            href={siteConfig.links.linkedin}
+            href={siteConfig.links.button2}
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
-            Blue Pill
+            Button 2
           </Link>
         </div>
       </section>
-      {/* <div className="md:hidden flex flex-row justify-around">
+      <div className="md:hidden flex flex-row justify-around">
         <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
           ⇣
         </h5>
@@ -86,20 +86,20 @@ export default function IndexPage() {
         <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
           ⇣
         </h5>
-      </div> */}
+      </div>
 {/* <div>
   <h5 className="pt-40 text-2xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl mb-2">
-    Projects Bitch Is this a Title
+    Projects
   </h5>
 </div> */}
-      {/* <div className="container grid gap-6 py-10 md:py-16 justify-end">
+      <div className="container grid gap-6 py-10 md:py-16 justify-end">
         <div className="flex flex-col items-center gap-6">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
             Projects
           </h2>
 <Typewriters2 />
         </div>
-      </div> */}
+      </div>
     </Layout>
   )
 }

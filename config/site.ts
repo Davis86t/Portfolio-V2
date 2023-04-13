@@ -5,10 +5,10 @@ interface SiteConfig {
   description: string
   mainNav: NavItem[]
   links: {
-    twitter: string
     github: string
-    docs: string
     linkedin: string
+    button1: string
+    button2: string
   }
 }
 
@@ -17,23 +17,23 @@ export const siteConfig: SiteConfig = {
   description:
     "Tanner Davis' personal website. I'm a software engineer and I love to build things.",
   mainNav: [
-    // {
-    //   title: "Home",
-    //   href: "/",
-    // },
-    // {
-    //   title: "Contact",
-    //   href: "/",
-    // },
-    // {
-    //   title: "Projects",
-    //   href: "/",
-    // },
+    {
+      title: "Home",
+      href: "/",
+    },
+    {
+      title: "Contact",
+      href: "/",
+    },
+    {
+      title: "Projects",
+      href: "/",
+    },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
     github: "https://github.com/davis86t",
-    docs: "https://ui.shadcn.com",
     linkedin: "https://www.linkedin.com/in/davis86t/",
+    button1: "https://www.linkedin.com/in/davis86t/",
+    button2: "https://github.com/davis86t",
   },
 }

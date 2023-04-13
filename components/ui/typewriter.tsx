@@ -34,7 +34,7 @@ export default function Typewriters() {
   )
 }
 
-function Typewriters2() {
+export function Typewriters2() {
   return (
     <div>
       <h1 className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
@@ -52,5 +52,3 @@ function Typewriters2() {
     </div>
   )
 }
-
-export { Typewriters2 }
