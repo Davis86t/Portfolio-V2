@@ -12,9 +12,6 @@ export default function Typewriters() {
           onInit={(typewriter) => {
             typewriter
               .typeString("I am a ")
-              .typeString("Human")
-              .pauseFor(1000)
-              .deleteChars(5)
               .typeString("Creator")
               .pauseFor(500)
               .deleteChars(7)

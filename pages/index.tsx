@@ -2,6 +2,7 @@ import Head from "next/head"
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
+import { Icons } from "@/components/icons"
 import { Layout } from "@/components/layout"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { buttonVariants } from "@/components/ui/button"
@@ -58,7 +59,7 @@ export default function IndexPage() {
           </Link> */}
         </div>
       </section>
-      <section className="align-middle container grid items-center gap-6 md:py-10 mb-8">
+      <section className="align-middle container grid items-center gap-6 md:py-10 md:mb-0 mb-8">
         <div className="flex gap-4 justify-center md:justify-normal">
           <Link
             href={siteConfig.links.button1}
@@ -66,7 +67,9 @@ export default function IndexPage() {
             rel="noreferrer"
             className={buttonVariants({ size: "lg" })}
           >
-            Button 1
+            <Icons.linkedin className="h-5 w-5 fill-current" />
+            <span className="sr-only">LinkedIn</span>
+            {/* &nbsp;Profile */}
           </Link>
           <Link
             target="_blank"
@@ -74,30 +77,39 @@ export default function IndexPage() {
             href={siteConfig.links.button2}
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
-            Button 2
+            <Icons.gitHub className="h-5 w-5" />
+            <span className="sr-only">GitHub</span>
+            {/* &nbsp;Repo */}
           </Link>
         </div>
       </section>
-      <div className="md:hidden flex flex-row justify-around">
-        <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-          ⇣
-        </h5>
-        <h5></h5>
-        <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-          ⇣
-        </h5>
-      </div>
-{/* <div>
+      <section className="align-middle container grid items-center gap-6">
+        <div className="md:hidden flex flex-row justify-around mb-6">
+          <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            ⇣
+          </h5>
+          <h5></h5>
+          <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            ⇣
+          </h5>
+        </div>
+      </section>
+      {/* <div>
   <h5 className="pt-40 text-2xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl mb-2">
     Projects
   </h5>
 </div> */}
-      <div className="container grid gap-6 py-10 md:py-16 justify-end">
+      <div className="container grid gap-6 py-10 md:py-16 md:mt-8 justify-end border-t border-t-slate-200 dark:border-t-slate-700">
         <div className="flex flex-col items-center gap-6">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-            Projects
+            My Portfolio
           </h2>
-<Typewriters2 />
+          <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
+            Here are some of the projects I have worked on. I am always looking
+            for new opportunities to learn and grow as a developer. If you have
+            any questions or would like to collaborate on a project, please feel
+            free to reach out.
+          </p>
         </div>
       </div>
     </Layout>
