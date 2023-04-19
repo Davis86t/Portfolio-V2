@@ -10,7 +10,7 @@ import { Icons } from "@/components/icons"
 import { Layout } from "@/components/layout"
 import Portfolio from "@/components/portfolio"
 import { buttonVariants } from "@/components/ui/button"
-import Typewriters from "@/components/ui/typewriter"
+import Typewriters from "@/components/animations/typewriter"
 
 export default function IndexPage() {
   return (
