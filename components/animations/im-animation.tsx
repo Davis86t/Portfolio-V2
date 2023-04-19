@@ -16,7 +16,7 @@ const ImAnimation = () => {
         type: "spring",
         stiffness: 120,
         damping: 50,
-        delay: 0.55,
+        delay: 0.45,
       },
     },
   }

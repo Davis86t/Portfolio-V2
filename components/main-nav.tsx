@@ -23,8 +23,8 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       {/* <Link href="/" className="hidden items-center space-x-2 md:flex"> */}
-        {/* <Icons.logo className="h-6 w-6" /> */}
-        {/* <span className="hidden font-bold sm:inline-block">
+      {/* <Icons.logo className="h-6 w-6" /> */}
+      {/* <span className="hidden font-bold sm:inline-block">
           {siteConfig.name}
         </span> */}
       {/* </Link> */}
@@ -60,14 +60,14 @@ export function MainNav({ items }: MainNavProps) {
         <DropdownMenuContent
           align="start"
           sideOffset={24}
-          className="w-[300px] overflow-scroll"
+          className="w-[120px]"
         >
-          <DropdownMenuLabel>
+          {/* <DropdownMenuLabel>
             <Link href="/" className="flex items-center">
               <Icons.logo className="mr-2 h-4 w-4" /> {siteConfig.name}
             </Link>
-          </DropdownMenuLabel>
-          <DropdownMenuSeparator />
+          </DropdownMenuLabel> */}
+
           {items?.map(
             (item, index) =>
               item.href && (

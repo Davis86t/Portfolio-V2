@@ -27,7 +27,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       title: "Portfolio",
-      href: "/",
+      href: "/portfolio",
     },
     {
       title: "About Me",

@@ -28,7 +28,7 @@ const TannerAnimation = () => {
         <motion.span
           variants={letterVariants}
           transition={{
-            delay: 1.5,
+            delay: 1,
             type: "spring",
             stiffness: 80,
             damping: 20,
@@ -40,7 +40,7 @@ const TannerAnimation = () => {
         <motion.span
           variants={letterVariants}
           transition={{
-            delay: 1.7,
+            delay: 1.1,
             type: "spring",
             stiffness: 80,
             damping: 20,
@@ -52,7 +52,7 @@ const TannerAnimation = () => {
         <motion.span
           variants={letterVariants}
           transition={{
-            delay: 1.9,
+            delay: 1.2,
             type: "spring",
             stiffness: 80,
             damping: 20,
@@ -64,7 +64,7 @@ const TannerAnimation = () => {
         <motion.span
           variants={letterVariants}
           transition={{
-            delay: 2.1,
+            delay: 1.3,
             type: "spring",
             stiffness: 80,
             damping: 20,
@@ -76,7 +76,7 @@ const TannerAnimation = () => {
         <motion.span
           variants={letterVariants}
           transition={{
-            delay: 2.3,
+            delay: 1.4,
             type: "spring",
             stiffness: 80,
             damping: 20,
@@ -88,7 +88,7 @@ const TannerAnimation = () => {
         <motion.span
           variants={letterVariants}
           transition={{
-            delay: 2.5,
+            delay: 1.5,
             type: "spring",
             stiffness: 80,
             damping: 20,
@@ -100,7 +100,7 @@ const TannerAnimation = () => {
         <motion.span
           variants={letterVariants}
           transition={{
-            delay: 2.7,
+            delay: 1.6,
             type: "spring",
             stiffness: 80,
             damping: 20,
