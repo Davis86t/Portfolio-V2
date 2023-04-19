@@ -8,40 +8,23 @@ export default function Typewriters() {
         <Typewriter
           options={{
             loop: false,
+            deleteSpeed: 25,
           }}
           onInit={(typewriter) => {
             typewriter
-              .typeString("I am a ")
+              .pauseFor(2800)
+              // .typeString("I am a ")
               .typeString("Creator")
-              .pauseFor(500)
+              .pauseFor(250)
               .deleteChars(7)
               .typeString("Developer")
-              .pauseFor(500)
+              .pauseFor(250)
               .deleteChars(9)
-              .typeString("Leader")
-              .pauseFor(500)
-              .deleteChars(6)
+              // .typeString("Leader")
+              // .pauseFor(500)
+              // .deleteChars(6)
               .typeString("Software Engineer.")
               .pauseFor(1500)
-              .start()
-          }}
-        />
-      </h1>
-    </div>
-  )
-}
-
-export function Typewriters2() {
-  return (
-    <div>
-      <h1 className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-        <Typewriter
-          options={{
-            loop: false,
-          }}
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("I have experience with a variety of technologies and frameworks.")
               .start()
           }}
         />
