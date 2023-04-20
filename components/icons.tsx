@@ -5,6 +5,7 @@ import {
   SunMedium,
   Twitter,
   Linkedin,
+  ChevronsDown,
   type Icon as LucideIcon,
   Menu,
 } from "lucide-react"
@@ -18,6 +19,7 @@ export const Icons = {
   laptop: Laptop,
   twitter: Twitter,
   linkedin: Linkedin,
+  down: ChevronsDown,
   logo: (props: LucideProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path

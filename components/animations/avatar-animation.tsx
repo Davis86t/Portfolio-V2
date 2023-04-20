@@ -9,17 +9,18 @@ const AvatarAnimation = () => {
         initial={{
           y: -500,
           opacity: 0,
-          rotateY: 0,
+          rotateX: 0,
         }}
         animate={{
           y: 0,
           opacity: 1,
-          rotateX: [0, 90, 180, 270, 360],
+          rotateX: 360,
           transition: {
-            duration: 3,
+            duration: 5,
             type: "spring",
-            stiffness: 50,
+            stiffness: 24,
             damping: 10,
+            delay: 0.5,
           },
         }}
       >

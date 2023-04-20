@@ -12,7 +12,7 @@ export default function Typewriters() {
           }}
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(2800)
+              .pauseFor(2000)
               // .typeString("I am a ")
               .typeString("Creator")
               .pauseFor(250)
@@ -23,7 +23,7 @@ export default function Typewriters() {
               // .typeString("Leader")
               // .pauseFor(500)
               // .deleteChars(6)
-              .typeString("Software Engineer.")
+              .typeString("Software Engineer")
               .pauseFor(1500)
               .start()
           }}
