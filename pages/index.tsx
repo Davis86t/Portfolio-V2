@@ -21,7 +21,7 @@ export default function IndexPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="grid items-start h-screen mt-[10vh] md:mt-[20vh]">
+      <section className="grid items-start h-screen pt-[10vh] md:pt-[20vh]">
         <section className="align-middle container grid items-center md:pb-10">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <AvatarAnimation />
@@ -70,7 +70,9 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
-      <Portfolio />
+      <div id='portfolio'>
+      <Portfolio/>
+      </div>
     </Layout>
   )
 }
