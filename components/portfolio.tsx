@@ -1,17 +1,18 @@
+import PortfolioAnimation from "./animations/portfolio-animation"
+
 export default function Portfolio() {
   return (
-    <div className="h-screen container grid gap-6 py-10 md:py-16 justify-end">
-      <div className="flex flex-col items-center gap-6">
-        <h2 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-          My Portfolio
-        </h2>
-        <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-          Here are some of the projects I have worked on. I am always looking
-          for new opportunities to learn and grow as a developer. If you have
-          any questions or would like to collaborate on a project, please feel
-          free to reach out.
-        </p>
-      </div>
+    <div className="z-0 grid h-[calc(100vh-65px)] pt-5 md:pt-20 w-[100%]">
+      <section className="container grid">
+        <div className="flex flex-col items-start gap-6">
+          <div className="flex max-w-[980px] flex-col items-start pb-1 md:mb-0 mb-6">
+            <PortfolioAnimation />
+            <p className="max-w-[700px] text-md text-slate-700 dark:text-slate-400 md:text-xl">
+              A small sample of my recent projects.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

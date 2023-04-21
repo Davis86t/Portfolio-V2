@@ -12,14 +12,14 @@ export default function Typewriters() {
           }}
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(2000)
+              .pauseFor(1500)
               // .typeString("I am a ")
-              .typeString("Creator")
-              .pauseFor(250)
-              .deleteChars(7)
-              .typeString("Developer")
-              .pauseFor(250)
-              .deleteChars(9)
+              // .typeString("Creator")
+              // .pauseFor(250)
+              // .deleteChars(7)
+              // .typeString("Developer")
+              // .pauseFor(250)
+              // .deleteChars(9)
               // .typeString("Leader")
               // .pauseFor(500)
               // .deleteChars(6)

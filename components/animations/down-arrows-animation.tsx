@@ -8,7 +8,7 @@ const DownArrowAnimation = () => {
       <motion.div
         initial={{
           y: -15,
-          opacity: 0,
+          opacity: 1,
         }}
         animate={{
           y: 0,
@@ -20,7 +20,7 @@ const DownArrowAnimation = () => {
             stiffness: 35,
             damping: 10,
             // mass: 3.5,
-            delay: 7.5,
+            delay: 1.5,
             repeat: Infinity,
             repeatType: "reverse",
           },

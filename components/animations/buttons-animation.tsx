@@ -25,7 +25,7 @@ const ButtonAnimation = () => {
                 type: "spring",
                 stiffness: 18,
                 damping: 10,
-                delay: 7.5,
+                delay: 1.5,
               },
             }}
           >
@@ -54,7 +54,7 @@ const ButtonAnimation = () => {
                 type: "spring",
                 stiffness: 18,
                 damping: 10,
-                delay: 7.75,
+                delay: 1.75,
               },
             }}
           >
