@@ -1,6 +1,6 @@
 import { Variants, motion } from "framer-motion"
 
-type LetterVariants = Variants & { delay?: number }
+type LetterVariants = Variants
 
 const TannerAnimation = () => {
   const letterVariants: LetterVariants = {
@@ -16,7 +16,6 @@ const TannerAnimation = () => {
     },
   }
 
-  const letters = ["T", "a", "n", "n", "e", "r", "."]
   return (
     <>
       <motion.div

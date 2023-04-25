@@ -1,5 +1,7 @@
 import Head from "next/head"
 
+import AboutMe from "@/components/about"
+import Contact from "@/components/contact"
 import Intro from "@/components/intro"
 import { Layout } from "@/components/layout"
 import Portfolio from "@/components/portfolio"
@@ -15,6 +17,8 @@ export default function IndexPage() {
       </Head>
       <Intro />
       <Portfolio />
+      <AboutMe />
+      <Contact />
     </Layout>
   )
 }

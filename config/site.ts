@@ -23,18 +23,18 @@ export const siteConfig: SiteConfig = {
       replace: true,
     },
     {
-      title: "Contact",
-      href: "/",
-      replace: true,
-    },
-    {
       title: "Portfolio",
       href: "/portfolio",
       replace: true,
     },
     {
       title: "About Me",
-      href: "/",
+      href: "/about",
+      replace: true,
+    },
+    {
+      title: "Contact",
+      href: "/contact",
       replace: true,
     },
   ],
