@@ -4,4 +4,5 @@ export interface NavItem {
   disabled?: boolean
   external?: boolean
   replace?: boolean
+  scroll?: boolean
 }

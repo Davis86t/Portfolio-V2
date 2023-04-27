@@ -8,6 +8,8 @@ import {
   ChevronsDown,
   type Icon as LucideIcon,
   Menu,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react"
 
 export type Icon = LucideIcon
@@ -20,6 +22,8 @@ export const Icons = {
   twitter: Twitter,
   linkedin: Linkedin,
   down: ChevronsDown,
+  left: ChevronLeft,
+  right: ChevronRight,
   logo: (props: LucideProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path

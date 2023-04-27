@@ -15,11 +15,9 @@ const DownArrowAnimation = () => {
           opacity: 1,
 
           transition: {
-            // duration: .75,
             type: "spring",
             stiffness: 35,
             damping: 10,
-            // mass: 3.5,
             delay: 1.5,
             repeat: Infinity,
             repeatType: "reverse",
