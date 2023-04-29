@@ -5,7 +5,7 @@ export default function Portfolio() {
   return (
     <div
       id="portfolio"
-      className=" z-0 h-[calc(100vh-64px)] w-[100%] flex flex-col justify-center items-center"
+      className=" z-0 h-[calc(100vh-64px)] pt-5 md:pt-20 w-[100%] flex flex-col justify-center items-center"
     >
       <section className="container flex flex-col gap-[9vh]">
         <div className="flex max-w-[980px] flex-col items-start">
@@ -14,8 +14,9 @@ export default function Portfolio() {
             A small sample of my recent projects.
           </p>
         </div>
-        <EmblaCarousel />
+        
       </section>
+      <EmblaCarousel />
     </div>
   )
 }

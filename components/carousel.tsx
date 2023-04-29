@@ -15,32 +15,35 @@ export const EmblaCarousel = () => {
   }, [emblaApi])
 
   return (
-    <div className="embla overflow-hidden m-[auto] max-h-[60vh]" ref={emblaRef}>
-      <div className="embla__container gap-4 md:gap-16 flex flex-row">
-        <div className="embla__slide flex-[0_0_65%] min-w-0">
+    <div
+      className="embla overflow-hidden m-[auto] max-h-[60vh] max-w-[1440px]"
+      ref={emblaRef}
+    >
+      <div className="embla__container gap-[10px] md:gap-[20px]  flex flex-row">
+        <div className="embla__slide flex-[0_0_85%] md:flex-[0_0_50%] min-w-0">
           <img
-            className="max-h-[60vh] rounded border-2 border-slate-300"
+            className="max-h-[60vh] rounded-lg border-2 border-slate-300"
             src="/FP-thumb-2.png"
             alt="1"
           />
         </div>
-        <div className="embla__slide flex-[0_0_65%] min-w-0">
+        <div className="embla__slide flex-[0_0_85%] md:flex-[0_0_50%] min-w-0">
           <img
-            className="max-h-[60vh] rounded border-2 border-slate-300"
+            className="max-h-[60vh] rounded-lg border-2 border-slate-300"
             src="/FP-thumb-2.png"
             alt="2"
           />
         </div>
-        <div className="embla__slide flex-[0_0_65%] min-w-0">
+        <div className="embla__slide flex-[0_0_85%] md:flex-[0_0_50%] min-w-0">
           <img
-            className="max-h-[60vh] rounded border-2 border-slate-300"
+            className="max-h-[60vh] rounded-lg border-2 border-slate-300"
             src="/FP-thumb-2.png"
             alt="3"
           />
         </div>
-        <div className="embla__slide flex-[0_0_65%] min-w-0 mr-4 md:mr-16">
+        <div className="embla__slide flex-[0_0_85%] md:flex-[0_0_50%] min-w-0 mr-[10px] md:mr-[20px]">
           <img
-            className="max-h-[60vh] rounded border-2 border-slate-300"
+            className="max-h-[60vh] rounded-lg border-2 border-slate-300"
             src="/FP-thumb-2.png"
             alt="3"
           />
