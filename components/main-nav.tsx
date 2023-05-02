@@ -21,6 +21,10 @@ interface MainNavProps {
 }
 
 export function MainNav({ items }: MainNavProps) {
+  function onClick() {
+    document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape" }))
+  }
+
   return (
     <div className="flex gap-6 md:gap-10">
       {items?.length ? (
@@ -102,7 +106,7 @@ export function MainNav({ items }: MainNavProps) {
               duration={750}
               className="text-4xl"
             >
-              Home
+              <p onClick={onClick}>Home</p>
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
@@ -114,7 +118,7 @@ export function MainNav({ items }: MainNavProps) {
               duration={750}
               className="text-4xl"
             >
-              Portfolio
+              <p onClick={onClick}>Portfolio</p>
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
@@ -126,7 +130,7 @@ export function MainNav({ items }: MainNavProps) {
               duration={750}
               className="text-4xl"
             >
-              About Me
+              <p onClick={onClick}>About Me</p>
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
@@ -138,7 +142,7 @@ export function MainNav({ items }: MainNavProps) {
               duration={750}
               className="text-4xl"
             >
-              Contact
+              <p onClick={onClick}>Contact</p>
             </Link>
           </DropdownMenuItem>
         </DropdownMenuContent>

@@ -10,7 +10,8 @@ export const EmblaCarousel = () => {
 
   useEffect(() => {
     if (emblaApi) {
-      console.log(emblaApi.slideNodes())
+      // console.log(emblaApi.slideNodes())
+      return
     }
   }, [emblaApi])
 
