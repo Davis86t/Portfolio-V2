@@ -24,28 +24,28 @@ export const EmblaCarousel = () => {
         <div className="embla__slide flex-[0_0_85%] md:flex-[0_0_50%] min-w-0">
           <img
             className="max-h-[60vh] rounded-lg border-2 border-slate-300"
-            src="/FP-thumb-2.png"
+            src="/FP-thumb-landscape.png"
             alt="1"
           />
         </div>
         <div className="embla__slide flex-[0_0_85%] md:flex-[0_0_50%] min-w-0">
           <img
-            className="max-h-[60vh] rounded-lg border-2 border-slate-300"
-            src="/FP-thumb-2.png"
+            className="max-h-[60vh] rounded-lg border-2 border-slate-500 dark:border-slate-700"
+            src="/MW-challenge-landscape.png"
             alt="2"
           />
         </div>
         <div className="embla__slide flex-[0_0_85%] md:flex-[0_0_50%] min-w-0">
           <img
-            className="max-h-[60vh] rounded-lg border-2 border-slate-300"
-            src="/FP-thumb-2.png"
+            className="max-h-[60vh] rounded-lg border-2 border-slate-200"
+            src="/CP-thumb-landscape.png"
             alt="3"
           />
         </div>
         <div className="embla__slide flex-[0_0_85%] md:flex-[0_0_50%] min-w-0 mr-[10px] md:mr-[20px]">
           <img
-            className="max-h-[60vh] rounded-lg border-2 border-slate-300"
-            src="/FP-thumb-2.png"
+            className="max-h-[60vh] rounded-lg border-2 border-slate-300 dark:border-slate-700"
+            src="/Photo-site-landscape.png"
             alt="3"
           />
         </div>
