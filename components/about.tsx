@@ -25,12 +25,10 @@ export default function AboutMe() {
               learn new technologies.
             </p>
             <p className="max-w-[700px] text-md text-slate-700 dark:text-slate-400 md:text-xl pt-2">
-              My skills include Node, JavaScript, React, Redux, Git, Express,
-              PostgreSQL, Sequelize, HTML, and CSS. I'm also knowledgeable in
-              React Native, Postico, Insomnia, Tailwind CSS, Next.js, Axios, and
-              Figma. I've built a React Native mobile app for families to stay
-              organized, developed a portfolio website, and worked on an
-              e-commerce site using PostgreSQL, Express, React, and Node.js.
+              My skills include Node, JavaScript, TypeScript, React, Next.js, Redux, Git, Express,
+              PostgreSQL, Sequelize, HTML, CSS, and Tailwind CSS. I'm also knowledgeable in
+              React Native, Postico, Insomnia, Axios, and
+              Figma.
               </p>
               <p className="max-w-[700px] text-md text-slate-700 dark:text-slate-400 md:text-xl pt-2">
               Before my software engineering career, I owned TC Davis Homes and
