@@ -21,11 +21,11 @@ export default function ContactForm() {
 
   return (
     <Form.Root
-      className="w-full md:max-w-[700px]"
+      className="w-full md:max-w-[700px] mb-2"
       action="https://getform.io/f/3ef8c6a3-a613-4094-b13e-08068ffe7d96"
       method="POST"
     >
-      <Form.Field className="grid mb-[10px]" name="email">
+      <Form.Field className="md:max-w-[350px] grid mb-[10px]" name="email">
         <div className="flex items-baseline justify-between">
           <Form.Label className="text-[15px] font-medium leading-[35px] text-slate-600 dark:text-slate-100">
             Email
