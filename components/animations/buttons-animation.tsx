@@ -8,8 +8,8 @@ import { buttonVariants } from "@/components/ui/button"
 const ButtonAnimation = () => {
   return (
     <>
-      <div className="flex md:justify-start justify-center md:pt-5 lg:pt-0">
-        <div className="flex flex-row justify-between w-44 lg:w-48">
+      <div className="flex justify-center md:justify-start md:pt-5 lg:pt-0">
+        <div className="flex w-44 flex-row justify-between lg:w-48">
           <motion.div
             initial={{
               y: 500,

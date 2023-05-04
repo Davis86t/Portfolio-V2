@@ -28,5 +28,5 @@ module.exports = {
     "@ianvs/prettier-plugin-sort-imports",
     "prettier-plugin-tailwindcss"
   ],
-  tailwindConfig: './styles/tailwind.config.js',
+  tailwindConfig: './tailwind.config.js',
 }

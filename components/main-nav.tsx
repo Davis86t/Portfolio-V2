@@ -33,11 +33,11 @@ export function MainNav({ items }: MainNavProps) {
             activeClass="border-b-2 border-slate-600"
             to="home"
             spy={true}
-            smooth='easeOutQuad'
+            smooth="easeOutQuad"
             offset={-64}
             duration={750}
             className={cn(
-              "cursor-pointer flex items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
+              "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
             )}
           >
             Home
@@ -46,11 +46,11 @@ export function MainNav({ items }: MainNavProps) {
             activeClass="border-b-2 border-slate-600"
             to="portfolio"
             spy={true}
-            smooth='easeOutQuad'
+            smooth="easeOutQuad"
             offset={-64}
             duration={750}
             className={cn(
-              "cursor-pointer flex items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
+              "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
             )}
           >
             Portfolio
@@ -59,11 +59,11 @@ export function MainNav({ items }: MainNavProps) {
             activeClass="border-b-2 border-slate-600"
             to="aboutMe"
             spy={true}
-            smooth='easeOutQuad'
+            smooth="easeOutQuad"
             offset={-64}
             duration={750}
             className={cn(
-              "cursor-pointer flex items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
+              "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
             )}
           >
             About Me
@@ -72,11 +72,11 @@ export function MainNav({ items }: MainNavProps) {
             activeClass="border-b-2 border-slate-600"
             to="contact"
             spy={true}
-            smooth='easeOutQuad'
+            smooth="easeOutQuad"
             offset={-64}
             duration={750}
             className={cn(
-              "cursor-pointer flex items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
+              "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
             )}
           >
             Contact
@@ -95,7 +95,7 @@ export function MainNav({ items }: MainNavProps) {
         <DropdownMenuContent
           align="start"
           sideOffset={-5}
-          className="z-40 mt-[-47px] ml-[-8px] w-[75vw] h-[100vh] flex flex-col items-center justify-center md:hidden"
+          className="z-40 ml-[-8px] mt-[-47px] flex h-[100vh] w-[75vw] flex-col items-center justify-center md:hidden"
         >
           <DropdownMenuItem>
             <Link

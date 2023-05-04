@@ -19,7 +19,7 @@ const TannerAnimation = () => {
   return (
     <>
       <motion.div
-        className="text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl mb-0"
+        className="mb-0 text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl"
         style={{ display: "inline-flex" }}
         initial="initial"
         animate="animate"

@@ -1,15 +1,15 @@
 import {
+  ChevronLeft,
+  ChevronRight,
+  ChevronsDown,
   Laptop,
+  Linkedin,
   LucideProps,
+  Menu,
   Moon,
   SunMedium,
   Twitter,
-  Linkedin,
-  ChevronsDown,
   type Icon as LucideIcon,
-  Menu,
-  ChevronLeft,
-  ChevronRight,
 } from "lucide-react"
 
 export type Icon = LucideIcon

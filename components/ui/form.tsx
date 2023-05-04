@@ -1,31 +1,32 @@
-import { useRef } from "react";
-import * as Form from "@radix-ui/react-form";
-import { buttonVariants } from "./button";
-import { Input } from "./input";
-import { Textarea } from "./textarea";
+import { useRef } from "react"
+import * as Form from "@radix-ui/react-form"
+
+import { buttonVariants } from "./button"
+import { Input } from "./input"
+import { Textarea } from "./textarea"
 
 export default function ContactForm() {
-  const emailInputRef = useRef<HTMLInputElement>(null);
-  const messageInputRef = useRef<HTMLTextAreaElement>(null);
+  const emailInputRef = useRef<HTMLInputElement>(null)
+  const messageInputRef = useRef<HTMLTextAreaElement>(null)
 
   function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms))
   }
-  
+
   async function handleSubmit(event) {
-    await delay(1000);
+    await delay(1000)
     // Clear the input values
-    emailInputRef.current.value = "";
-    messageInputRef.current.value = "";
+    emailInputRef.current.value = ""
+    messageInputRef.current.value = ""
   }
 
   return (
     <Form.Root
-      className="w-full md:max-w-[700px] mb-2"
+      className="mb-2 w-full md:max-w-[700px]"
       action="https://getform.io/f/3ef8c6a3-a613-4094-b13e-08068ffe7d96"
       method="POST"
     >
-      <Form.Field className="md:max-w-[350px] grid mb-[10px]" name="email">
+      <Form.Field className="mb-[10px] grid md:max-w-[350px]" name="email">
         <div className="flex items-baseline justify-between">
           <Form.Label className="text-[15px] font-medium leading-[35px] text-slate-600 dark:text-slate-100">
             Email
@@ -48,7 +49,7 @@ export default function ContactForm() {
         </Form.Control>
         <input type="hidden" name="_gotcha" className="!hidden"></input>
       </Form.Field>
-      <Form.Field className="grid mb-[10px]" name="message">
+      <Form.Field className="mb-[10px] grid" name="message">
         <div className="flex items-baseline justify-between">
           <Form.Label className="text-[15px] font-medium leading-[35px] text-slate-600 dark:text-slate-100">
             Message
@@ -74,6 +75,5 @@ export default function ContactForm() {
         </button>
       </Form.Submit>
     </Form.Root>
-  );
+  )
 }
-

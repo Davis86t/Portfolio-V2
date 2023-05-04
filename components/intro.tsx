@@ -11,10 +11,10 @@ export default function Intro() {
     <section id="home" className="z-0 grid h-[calc(100vh-64px)] w-[100%]">
       <div className="grid h-[calc(100vh-128px)] items-center">
         <section className="container grid">
-          <div className="flex flex-col md:flex-row items-center gap-6">
+          <div className="flex flex-col items-center gap-6 md:flex-row">
             <AvatarAnimation />
-            <div className="flex max-w-[980px] flex-col items-start pb-1 md:mb-0 mb-6">
-              <h1 className="flex-col text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl mb-2">
+            <div className="mb-6 flex max-w-[980px] flex-col items-start pb-1 md:mb-0">
+              <h1 className="mb-2 flex-col text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl">
                 <HiAnimation />
                 <br />
                 <ImAnimation />

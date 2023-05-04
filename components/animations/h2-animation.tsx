@@ -17,7 +17,7 @@ const H2Animation = (letters1, letters2) => {
   return (
     <>
       <motion.div
-        className="text-4xl font-extrabold leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl mb-0"
+        className="mb-0 text-4xl font-extrabold leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl"
         style={{ display: "inline-flex" }}
         initial="initial"
         whileInView="animate"
