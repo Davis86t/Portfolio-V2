@@ -44,11 +44,11 @@ export default function ContactForm() {
           </Form.Message>
         </div>
         <Form.Control asChild>
-          <Input type="email" name="email" ref={emailInputRef} />
+          <Input type="email" name="email" ref={emailInputRef} required />
         </Form.Control>
         <input type="hidden" name="_gotcha" className="!hidden"></input>
       </Form.Field>
-      <Form.Field className="grid mb-[10px]" name="question">
+      <Form.Field className="grid mb-[10px]" name="message">
         <div className="flex items-baseline justify-between">
           <Form.Label className="text-[15px] font-medium leading-[35px] text-slate-600 dark:text-slate-100">
             Message
@@ -61,7 +61,7 @@ export default function ContactForm() {
           </Form.Message>
         </div>
         <Form.Control asChild>
-          <Textarea name="message" ref={messageInputRef} />
+          <Textarea name="message" ref={messageInputRef} required />
         </Form.Control>
       </Form.Field>
       <Form.Submit asChild>

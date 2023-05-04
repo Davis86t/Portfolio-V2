@@ -33,7 +33,7 @@ export function MainNav({ items }: MainNavProps) {
             activeClass="border-b-2 border-slate-600"
             to="home"
             spy={true}
-            smooth={true}
+            smooth='easeOutQuad'
             offset={-64}
             duration={750}
             className={cn(
@@ -46,7 +46,7 @@ export function MainNav({ items }: MainNavProps) {
             activeClass="border-b-2 border-slate-600"
             to="portfolio"
             spy={true}
-            smooth={true}
+            smooth='easeOutQuad'
             offset={-64}
             duration={750}
             className={cn(
@@ -59,7 +59,7 @@ export function MainNav({ items }: MainNavProps) {
             activeClass="border-b-2 border-slate-600"
             to="aboutMe"
             spy={true}
-            smooth={true}
+            smooth='easeOutQuad'
             offset={-64}
             duration={750}
             className={cn(
@@ -72,7 +72,7 @@ export function MainNav({ items }: MainNavProps) {
             activeClass="border-b-2 border-slate-600"
             to="contact"
             spy={true}
-            smooth={true}
+            smooth='easeOutQuad'
             offset={-64}
             duration={750}
             className={cn(

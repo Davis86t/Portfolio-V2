@@ -72,7 +72,7 @@ export const EmblaCarousel = (props) => {
         </div>
       </div>
       <button
-        className="embla__prev z-10 fill-slate-700 absolute flex items-center justify-center top-[45%] cursor-pointer w-[4rem] h-[4rem] sm:left-[1.6rem]"
+        className="embla__prev z-10 fill-slate-300 absolute flex items-center justify-center top-[45%] cursor-pointer w-[4rem] h-[4rem] sm:left-[1.6rem]"
         onClick={scrollPrev}
       >
         <svg
@@ -83,7 +83,7 @@ export const EmblaCarousel = (props) => {
         </svg>
       </button>
       <button
-        className="embla__next z-10 fill-slate-700 absolute flex items-center justify-center top-[45%]  cursor-pointer w-[4rem] h-[4rem] right-[0px] sm:right-[1.6rem]"
+        className="embla__next z-10 fill-slate-300 absolute flex items-center justify-center top-[45%]  cursor-pointer w-[4rem] h-[4rem] right-[0px] sm:right-[1.6rem]"
         onClick={scrollNext}
       >
         <svg
