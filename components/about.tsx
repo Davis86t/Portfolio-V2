@@ -10,7 +10,7 @@ export default function AboutMe() {
   return (
     <div
       id="aboutMe"
-      className="z-0 flex h-[calc(100vh-130px)] sm:h-[calc(100vh-65px)] w-[100%] flex-col items-center justify-center"
+      className="z-0 flex h-[calc(90vh-65px)] sm:h-[calc(100vh-65px)] w-[100%] flex-col items-center justify-center"
     >
       <section className="container grid">
         <div className="mb-6 flex flex-col items-start gap-5 pb-1 md:mb-0">
