@@ -8,7 +8,7 @@ import Typewriters from "./animations/typewriter"
 
 export default function Intro() {
   return (
-    <section id="home" className="z-0 grid h-[calc(100vh-64px)] w-[100%]">
+    <section id="home" className="z-0 grid h-[calc(100%-64px)] w-[100%]">
       <div className="grid h-[calc(100vh-128px)] items-center">
         <section className="container grid">
           <div className="flex flex-col items-center gap-6 md:flex-row">
