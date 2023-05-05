@@ -34,7 +34,7 @@ export function MainNav({ items }: MainNavProps) {
             to="home"
             spy={true}
             smooth="easeOutQuad"
-            offset={-64}
+            offset={-65}
             duration={750}
             className={cn(
               "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
@@ -47,7 +47,7 @@ export function MainNav({ items }: MainNavProps) {
             to="portfolio"
             spy={true}
             smooth="easeOutQuad"
-            offset={-64}
+            offset={-65}
             duration={750}
             className={cn(
               "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
@@ -60,7 +60,7 @@ export function MainNav({ items }: MainNavProps) {
             to="aboutMe"
             spy={true}
             smooth="easeOutQuad"
-            offset={-64}
+            offset={-65}
             duration={750}
             className={cn(
               "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
@@ -102,7 +102,7 @@ export function MainNav({ items }: MainNavProps) {
               to="home"
               spy={true}
               smooth={true}
-              offset={-64}
+              offset={-65}
               duration={750}
               className="text-4xl"
             >
@@ -114,7 +114,7 @@ export function MainNav({ items }: MainNavProps) {
               to="portfolio"
               spy={true}
               smooth={true}
-              offset={-64}
+              offset={-65}
               duration={750}
               className="text-4xl"
             >
@@ -126,7 +126,7 @@ export function MainNav({ items }: MainNavProps) {
               to="aboutMe"
               spy={true}
               smooth={true}
-              offset={-64}
+              offset={-65}
               duration={750}
               className="text-4xl"
             >

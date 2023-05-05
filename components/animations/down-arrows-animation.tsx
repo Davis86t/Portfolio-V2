@@ -24,16 +24,14 @@ const DownArrowAnimation = () => {
           },
         }}
       >
-        <div className="flex-end flex h-[64px]">
-          <div className="mb-6 flex w-screen flex-row justify-around">
-            <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              <Icons.down />
-            </h5>
-            <h5></h5>
-            <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              <Icons.down />
-            </h5>
-          </div>
+        <div className="mt-4 flex w-screen flex-row justify-around">
+          <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <Icons.down />
+          </h5>
+          <h5></h5>
+          <h5 className=" text-3xl leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <Icons.down />
+          </h5>
         </div>
       </motion.div>
     </>
