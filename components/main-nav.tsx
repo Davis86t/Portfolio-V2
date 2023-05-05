@@ -95,7 +95,7 @@ export function MainNav({ items }: MainNavProps) {
         <DropdownMenuContent
           align="start"
           sideOffset={-5}
-          className="z-40 ml-[-8px] mt-[-47px] flex h-[100vh] w-[75vw] flex-col items-center justify-center md:hidden"
+          className="z-40 ml-[-8px] mt-[-47px] pl-6 flex h-[100vh] w-[75vw] flex-col justify-center md:hidden"
         >
           <DropdownMenuItem>
             <Link
