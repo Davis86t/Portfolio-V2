@@ -73,7 +73,7 @@ export function MainNav({ items }: MainNavProps) {
             to="contact"
             spy={true}
             smooth="easeOutQuad"
-            offset={-64}
+            offset={0}
             duration={750}
             className={cn(
               "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
@@ -95,7 +95,7 @@ export function MainNav({ items }: MainNavProps) {
         <DropdownMenuContent
           align="start"
           sideOffset={-5}
-          className="z-40 ml-[-8px] mt-[-47px] pl-6 flex h-[100vh] w-[75vw] flex-col justify-center md:hidden"
+          className="z-40 ml-[-8px] mt-[-47px] flex h-[100vh] w-[75vw] flex-col justify-center pl-6 md:hidden"
         >
           <DropdownMenuItem>
             <Link
@@ -138,7 +138,7 @@ export function MainNav({ items }: MainNavProps) {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-64}
+              offset={0}
               duration={750}
               className="text-4xl"
             >

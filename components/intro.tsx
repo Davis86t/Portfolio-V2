@@ -8,9 +8,15 @@ import Typewriters from "./animations/typewriter"
 
 export default function Intro() {
   return (
-    <section id="home" className="z-0 grid h-[calc(90vh-65px)] sm:h-[calc(100vh-65px)] w-[100%]">
-      <div className="grid h-[calc(90vh-130px)] sm:h-[calc(100vh-130px)] items-center">
-        <section className="container grid">
+    <section
+      id="home"
+      className="z-0 flex flex-col"
+      style={{
+        height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
+      }}
+    >
+      <div className="flex h-full flex-col items-center">
+        <section className="container flex h-full flex-col justify-center sm:items-start">
           <div className="flex flex-col items-center gap-6 md:flex-row">
             <AvatarAnimation />
             <div className="mb-6 flex max-w-[980px] flex-col items-start pb-1 md:mb-0">

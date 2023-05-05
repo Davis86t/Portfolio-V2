@@ -19,8 +19,8 @@ export const siteConfig: SiteConfig = {
   mainNav: [
     {
       title: "Home",
-      href: "/#home",
-      replace: true,
+      href: "/",
+      replace: false,
     },
     {
       title: "Portfolio",

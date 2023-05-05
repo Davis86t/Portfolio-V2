@@ -9,7 +9,10 @@ export default function Portfolio() {
   return (
     <div
       id="portfolio"
-      className="z-0 flex h-[calc(90vh-65px)] sm:h-[calc(100vh-65px)] w-[100%] flex-col items-center justify-center gap-6"
+      className="z-0 flex flex-col items-center justify-center gap-6"
+      style={{
+        height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
+      }}
     >
       <section className="container flex flex-col gap-16">
         <div className="flex max-w-[980px] flex-col items-start">

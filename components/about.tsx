@@ -10,29 +10,32 @@ export default function AboutMe() {
   return (
     <div
       id="aboutMe"
-      className="z-0 flex h-[calc(90vh-65px)] sm:h-[calc(100vh-65px)] w-[100%] flex-col items-center justify-center"
+      className="z-0 mt-6 flex flex-col items-center justify-center"
+      style={{
+        height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
+      }}
     >
-      <section className="container grid">
-        <div className="mb-6 flex flex-col items-start gap-5 pb-1 md:mb-0">
+      <section className="container">
+        <div className="flex flex-col items-start">
           <AboutMeAnimation />
-          <ScrollArea className="max-h-[50vh]">
-            <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
-              Hi, I&apos;m Tanner Davis, a Full Stack Software Engineer with 5+ years
-              of experience in people relations. I specialize in creating
-              innovative solutions using the PERN stack, and I&apos;m always eager to
-              learn new technologies.
+          <div className="mb-4 mt-1 flex h-[55vh] flex-col overflow-scroll rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:m-0 sm:justify-center sm:bg-white sm:p-0 sm:dark:bg-slate-900">
+            <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
+              Hi, I&apos;m Tanner Davis, a Full Stack Software Engineer with 5+
+              years of experience in people relations. I specialize in creating
+              innovative solutions using the PERN stack, and I&apos;m always
+              eager to learn new technologies.
             </p>
-            <p className="text-md max-w-[700px] pt-[12px] text-slate-700 dark:text-slate-400 md:text-xl">
+            <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
               My skills include Node, JavaScript, TypeScript, React, Next.js,
               Redux, Git, Express, PostgreSQL, Sequelize, HTML, CSS, and
-              Tailwind CSS. I&apos;m also knowledgeable in React Native, Postico,
-              Insomnia, Axios, and Figma.
+              Tailwind CSS. I&apos;m also knowledgeable in React Native,
+              Postico, Insomnia, Axios, and Figma.
             </p>
-            <p className="text-md max-w-[700px] pt-[12px] text-slate-700 dark:text-slate-400 md:text-xl">
+            <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
               Before my software engineering career, I owned TC Davis Homes and
               worked in real estate and electronics contracting.
             </p>
-            <p className="text-md max-w-[700px] pt-[12px] text-slate-700 dark:text-slate-400 md:text-xl">
+            <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
               I hold a Software Engineering Certificate from{" "}
               <a
                 href="https://www.fullstackacademy.com/"
@@ -45,10 +48,10 @@ export default function AboutMe() {
               and completed their full-time, Full Stack Javascript Web
               Development Immersive program.
             </p>
-            <p className="text-md max-w-[700px] pt-[12px] text-slate-700 dark:text-slate-400 md:text-xl">
+            <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
               Let&apos;s connect on LinkedIn!
             </p>
-          </ScrollArea>
+          </div>
           <Link
             href={siteConfig.links.button1}
             target="_blank"

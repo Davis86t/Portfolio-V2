@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app"
 import { Inter as FontSans } from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
 import { ThemeProvider } from "next-themes"
-import { Analytics } from '@vercel/analytics/react'
 
 import "@/styles/globals.css"
 
