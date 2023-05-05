@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="z-0 flex h-[calc(100vh-64px)] w-[100%] flex-col items-center justify-center"
+      className="z-0 flex h-[calc(100vh-130px)] sm:h-[calc(100vh-65px)] w-[100%] flex-col items-center justify-center"
     >
       <section className="container flex flex-col gap-4">
         <div className="flex max-w-[980px] flex-col items-start ">
