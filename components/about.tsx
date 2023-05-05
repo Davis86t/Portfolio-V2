@@ -15,7 +15,7 @@ export default function AboutMe() {
       <section className="container grid">
         <div className="mb-6 flex flex-col items-start gap-5 pb-1 md:mb-0">
           <AboutMeAnimation />
-          <ScrollArea className="max-h-[calc(100vh-220px)]">
+          <ScrollArea className="max-h-[50vh]">
             <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
               Hi, I&apos;m Tanner Davis, a Full Stack Software Engineer with 5+ years
               of experience in people relations. I specialize in creating
