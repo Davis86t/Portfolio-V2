@@ -12,7 +12,7 @@ export default function Contact() {
           <ContactAnimation />
           <p className="max-w-[700px] text-sm text-slate-700 dark:text-slate-400 md:text-xl">
             This message will be sent to my personal email address via{" "}
-            <a href="https://getform.io/" target="_blank" className="underline">
+            <a href="https://getform.io/" target="_blank" rel="noreferrer" className="underline">
               getform.io
             </a>
             . I will not use your email address for any other purpose than to

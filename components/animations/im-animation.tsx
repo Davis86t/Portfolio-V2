@@ -22,7 +22,7 @@ const ImAnimation = () => {
           },
         }}
       >
-        I'm &nbsp;
+        I&apos;m &nbsp;
       </motion.div>
     </>
   )

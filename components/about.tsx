@@ -17,15 +17,15 @@ export default function AboutMe() {
           <AboutMeAnimation />
           <ScrollArea className="max-h-[calc(100vh-220px)]">
             <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
-              Hi, I'm Tanner Davis, a Full Stack Software Engineer with 5+ years
+              Hi, I&apos;m Tanner Davis, a Full Stack Software Engineer with 5+ years
               of experience in people relations. I specialize in creating
-              innovative solutions using the PERN stack, and I'm always eager to
+              innovative solutions using the PERN stack, and I&apos;m always eager to
               learn new technologies.
             </p>
             <p className="text-md max-w-[700px] pt-[12px] text-slate-700 dark:text-slate-400 md:text-xl">
               My skills include Node, JavaScript, TypeScript, React, Next.js,
               Redux, Git, Express, PostgreSQL, Sequelize, HTML, CSS, and
-              Tailwind CSS. I'm also knowledgeable in React Native, Postico,
+              Tailwind CSS. I&apos;m also knowledgeable in React Native, Postico,
               Insomnia, Axios, and Figma.
             </p>
             <p className="text-md max-w-[700px] pt-[12px] text-slate-700 dark:text-slate-400 md:text-xl">
@@ -37,6 +37,7 @@ export default function AboutMe() {
               <a
                 href="https://www.fullstackacademy.com/"
                 target="_blank"
+                rel="noreferrer"
                 className="underline"
               >
                 Fullstack Academy
@@ -45,7 +46,7 @@ export default function AboutMe() {
               Development Immersive program.
             </p>
             <p className="text-md max-w-[700px] pt-[12px] text-slate-700 dark:text-slate-400 md:text-xl">
-              Let's connect on LinkedIn!
+              Let&apos;s connect on LinkedIn!
             </p>
           </ScrollArea>
           <Link

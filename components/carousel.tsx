@@ -1,5 +1,6 @@
 import React, { useCallback } from "react"
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react"
+import Image from "next/image"
 
 type PropType = {
   options?: EmblaOptionsType
@@ -21,11 +22,12 @@ export const EmblaCarousel = (props) => {
     <div className="embla relative overflow-hidden">
       <div className="embla__viewport max-w-[1440px]" ref={emblaRef}>
         <div className="embla__container z-0 flex flex-row gap-[10px] md:gap-[20px]">
-          <div className="embla__slide min-w-0  flex-[0_0_65%]">
+          <div className="embla__slide min-w-0 relative flex-[0_0_65%]">
             <img
               className="hidden max-h-[70vh] rounded-lg border-2 border-slate-300 md:flex"
               src="/FP-thumb-landscape.png"
               alt="Family Plan mobile app - group project"
+
             />
             <img
               className="max-h-[65vh] rounded-lg border-2 border-slate-300 md:hidden"
