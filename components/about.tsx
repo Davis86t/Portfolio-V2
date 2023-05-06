@@ -27,7 +27,7 @@ export default function AboutMe() {
             </p>
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
               So far, I have extensive experience working with a variety of
-              technologies including Node, JavaScript, TypeScript, React, Next,
+              tech stacks including Node, JavaScript, TypeScript, React, Next,
               Express, PostgreSQL, Sequelize, HTML, CSS, and Tailwind.
             </p>
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
