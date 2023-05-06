@@ -1,8 +1,8 @@
 import H2Animation from "./h2-animation"
 
 const ContactAnimation = () => {
-  const letters1 = ["C", "o", "n", "t", "a", "c", "t"]
-  const letters2 = ["M", "e"]
+  const letters1 = ["L", "e", "t", "'", "s"]
+  const letters2 = ["T", "a", "l", "k"]
 
   return H2Animation(letters1, letters2)
 }
