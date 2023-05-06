@@ -18,7 +18,7 @@ export default function AboutMe() {
       <section className="container">
         <div className="flex flex-col items-start">
           <AboutMeAnimation />
-          <div className="mb-4 mt-1 flex h-[55vh] flex-col overflow-scroll sm:overflow-auto rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:m-0 sm:justify-center sm:bg-white sm:p-0 sm:dark:bg-slate-900">
+          <div className="mb-4 mt-1 flex h-[55vh] flex-col overflow-scroll rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:m-0 sm:justify-center sm:overflow-auto sm:bg-white sm:p-0 sm:dark:bg-slate-900">
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
               Hi, I&apos;m Tanner Davis, a Full Stack Software Engineer with 5+
               years of experience in people relations. I specialize in creating
@@ -26,27 +26,23 @@ export default function AboutMe() {
               eager to learn new technologies.
             </p>
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              My skills include Node, JavaScript, TypeScript, React, Next.js,
-              Redux, Git, Express, PostgreSQL, Sequelize, HTML, CSS, and
-              Tailwind CSS. I&apos;m also knowledgeable in React Native,
-              Postico, Insomnia, Axios, and Figma.
+              So far, I have extensive experience working with a variety of
+              technologies including Node, JavaScript, TypeScript, React, Next,
+              Express, PostgreSQL, Sequelize, HTML, CSS, and Tailwind.
             </p>
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              Before my software engineering career, I owned TC Davis Homes and
-              worked in real estate and electronics contracting.
-            </p>
-            <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              I hold a Software Engineering Certificate from{" "}
+              I completed{" "}
               <a
-                href="https://www.fullstackacademy.com/"
+                href="https://www.fullstackacademy.com/programs/coding-bootcamp"
                 target="_blank"
                 rel="noreferrer"
                 className="underline"
               >
-                Fullstack Academy
+                Fullstack Academy&apos;s
               </a>{" "}
-              and completed their full-time, Full Stack Javascript Web
-              Development Immersive program.
+              Full-Time Software Engineering Immersive program, which provided
+              me with comprehensive training in Full Stack Javascript Web
+              Development, and earned a certificate in Software Engineering.
             </p>
             <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
               Let&apos;s connect on LinkedIn!
