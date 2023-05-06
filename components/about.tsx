@@ -18,7 +18,7 @@ export default function AboutMe() {
       <section className="container">
         <div className="flex flex-col items-start">
           <AboutMeAnimation />
-          <div className="mb-4 mt-1 flex h-[55vh] flex-col overflow-scroll rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:m-0 sm:justify-center sm:bg-white sm:p-0 sm:dark:bg-slate-900">
+          <div className="mb-4 mt-1 flex h-[55vh] flex-col overflow-scroll sm:overflow-auto rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:m-0 sm:justify-center sm:bg-white sm:p-0 sm:dark:bg-slate-900">
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
               Hi, I&apos;m Tanner Davis, a Full Stack Software Engineer with 5+
               years of experience in people relations. I specialize in creating
