@@ -6,7 +6,7 @@ type PropType = {
   options?: EmblaOptionsType
 }
 
-export const EmblaCarousel = (props) => {
+export const EmblaCarousel = (props: PropType) => {
   const { options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
@@ -20,52 +20,52 @@ export const EmblaCarousel = (props) => {
 
   return (
     <div className="embla relative overflow-hidden">
-      <div className="embla__viewport max-w-[1440px]" ref={emblaRef}>
-        <div className="embla__container z-0 flex flex-row gap-[10px] md:gap-[20px]">
-          <div className="embla__slide relative min-w-0 flex-[0_0_65%]">
+      <div className="embla__viewport   h-fill max-w-[1440px]" ref={emblaRef}>
+        <div className="embla__container z-0 flex flex-row  gap-[10px] sm:gap-[20px]">
+          <div className="embla__slide min-w-0 flex-[0_0_70%] sm:flex-[0_0_65%]">
             <img
-              className="hidden max-h-[65vh] rounded-lg border-2 border-slate-300 md:flex"
+              className="hidden max-h-[65vh] rounded-lg border-2 border-slate-300 sm:flex"
               src="/FP-thumb-landscape.png"
               alt="Family Plan mobile app - group project"
             />
             <img
-              className="max-h-[60vh] rounded-lg border-2 border-slate-300 md:hidden"
+              className="rounded-lg border-2 border-slate-300 sm:hidden"
               src="/FP-thumb-portrait.png"
               alt="Family Plan mobile app - group project"
             />
           </div>
-          <div className="embla__slide min-w-0  flex-[0_0_65%]">
+          <div className="embla__slide min-w-0 flex-[0_0_70%] sm:flex-[0_0_65%]">
             <img
-              className="hidden max-h-[65vh] rounded-lg border-2 border-slate-500 dark:border-slate-700 md:flex"
+              className="hidden max-h-[65vh] rounded-lg border-2 border-slate-500 dark:border-slate-700 sm:flex"
               src="/MW-challenge-landscape.png"
               alt="Midwestern take-home challenge"
             />
             <img
-              className="max-h-[60vh] rounded-lg border-2 border-slate-500 dark:border-slate-700 md:hidden"
+              className="max-h-[100%] rounded-lg border-2 border-slate-500 dark:border-slate-700 sm:hidden"
               src="/MW-thumb-portrait.png"
               alt="Midwestern take-home challenge"
             />
           </div>
-          <div className="embla__slide min-w-0 flex-[0_0_65%]">
+          <div className="embla__slide min-w-0 flex-[0_0_70%] sm:flex-[0_0_65%]">
             <img
-              className="hidden max-h-[65vh] rounded-lg border-2 border-slate-200 md:flex"
+              className="hidden max-h-[65vh] rounded-lg border-2 border-slate-200 sm:flex"
               src="/CP-thumb-landscape.png"
               alt="E-commerce site - group project"
             />
             <img
-              className="max-h-[60vh] rounded-lg border-2 border-slate-200 md:hidden"
+              className="max-h-[100%] rounded-lg border-2 border-slate-200 sm:hidden"
               src="/CP-thumb-portrait.png"
               alt="E-commerce site - group project"
             />
           </div>
-          <div className="embla__slide mr-[10px]  min-w-0 flex-[0_0_65%] md:mr-[20px]">
+          <div className="embla__slide  mr-[10px] min-w-0 flex-[0_0_70%] sm:mr-[20px] sm:flex-[0_0_65%]">
             <img
-              className="hidden max-h-[65vh] rounded-lg border-2 border-slate-300 dark:border-slate-700 md:flex"
+              className="hidden max-h-[65vh] rounded-lg border-2 border-slate-300 dark:border-slate-700 sm:flex"
               src="/Photo-site-landscape.png"
               alt="Photography site - personal project"
             />
             <img
-              className="max-h-[60vh] rounded-lg border-2 border-slate-300 dark:border-slate-700 md:hidden"
+              className="max-h-[100%] rounded-lg border-2 border-slate-300 dark:border-slate-700 sm:hidden"
               src="/Photo-site-portrait.png"
               alt="Photography site - personal project"
             />

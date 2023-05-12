@@ -9,12 +9,13 @@ export default function Portfolio() {
   return (
     <div
       id="portfolio"
-      className="z-0 sm:max-h-[1080px]"
+      className="z-0 h-screen"
       style={{
-        height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
+        height: `calc(100vh - 65px)`,
+        // height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
       }}
     >
-      <div className="flex h-full flex-col items-center justify-center gap-6 sm:max-h-[1080px] sm:justify-start sm:pt-[8vh]">
+      <div className="flex h-full flex-col justify-center gap-6 sm:max-h-[1080px]">
         <section className="container flex flex-col gap-16">
           <div className="flex max-w-[980px] flex-col items-start sm:gap-2">
             <PortfolioAnimation />

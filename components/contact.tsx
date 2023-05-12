@@ -5,13 +5,14 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="z-0 flex h-[calc(100vh-65px)] flex-col items-center justify-center sm:h-[100vh] sm:justify-start sm:pt-[8vh]"
-      // style={{
+      className="z-0 h-screen"
+      style={{
+        height: `calc(100vh - 65px)`
       //   height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
-      // }}
+      }}
     >
-      <section className="container flex flex-col gap-4 sm:max-h-[1080px] sm:pt-[10vh]">
-        <div className="flex max-w-[980px] flex-col items-start">
+      <section className="container flex h-full flex-col justify-center gap-6 sm:max-h-[1080px]">
+        <div className="flex flex-col items-start">
           <ContactAnimation />
           <p className="max-w-[700px] text-sm text-slate-700 dark:text-slate-400 md:text-xl">
             This message will be sent to my personal email address. I will not
