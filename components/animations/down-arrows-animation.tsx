@@ -24,7 +24,7 @@ const DownArrowAnimation = () => {
           },
         }}
       >
-        <div className="sm:flex-end mt-4 flex w-screen flex-row justify-around sm:mb-6 sm:mt-0 sm:h-[64px]">
+        <div className="sm:flex-end mt-4 flex w-screen flex-row justify-around  sm:mt-0 sm:h-[64px]">
           <h5 className=" text-3xl  leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
             <Icons.down />
           </h5>
