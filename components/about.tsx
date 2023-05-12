@@ -10,13 +10,13 @@ export default function AboutMe() {
   return (
     <div
       id="aboutMe"
-      className="z-0 mt-6 flex flex-col items-center justify-center"
+      className="z-0 sm:max-h-[1080px]"
       style={{
         height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
       }}
     >
-      <section className="container">
-        <div className="flex flex-col items-start">
+      <section className="container flex h-full flex-col justify-center sm:justify-start sm:pt-[10vh]">
+        <div className="flex flex-col items-start ">
           <AboutMeAnimation />
           <div className="mb-4 mt-1 flex h-[55vh] flex-col overflow-scroll rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:m-0 sm:justify-center sm:overflow-auto sm:bg-white sm:p-0 sm:dark:bg-slate-900">
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
@@ -26,8 +26,8 @@ export default function AboutMe() {
               eager to learn new technologies.
             </p>
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              So far, I have extensive experience working with a variety of
-              tech stacks including Node, JavaScript, TypeScript, React, Next,
+              So far, I have extensive experience working with a variety of tech
+              stacks including Node, JavaScript, TypeScript, React, Next,
               Express, PostgreSQL, Sequelize, HTML, CSS, and Tailwind.
             </p>
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">

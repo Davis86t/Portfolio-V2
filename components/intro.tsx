@@ -10,14 +10,14 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className="z-0 mt-[-20px] flex flex-col justify-center sm:mt-0 sm:justify-normal"
+      className="z-0 flex flex-col justify-center pb-[15px] sm:mt-0 sm:justify-normal sm:pb-0"
       style={{
         height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
       }}
     >
-      <div className="flex flex-col items-center sm:h-full">
+      <div className="flex h-full flex-col items-center pt-[8vh] sm:mb-[100px] sm:pt-0">
         <section className="container flex h-full flex-col justify-start pt-4 sm:items-start sm:justify-center sm:pt-0">
-          <div className="flex flex-col items-center gap-6 md:flex-row">
+          <div className="flex flex-col items-center gap-6 sm:flex-row sm:pb-6 md:pb-0">
             <AvatarAnimation />
             <div className="mb-6 flex max-w-[980px] flex-col items-start pb-1 md:mb-0">
               <h1 className="mb-2 flex-col text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl">

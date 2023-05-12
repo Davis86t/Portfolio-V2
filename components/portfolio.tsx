@@ -9,20 +9,22 @@ export default function Portfolio() {
   return (
     <div
       id="portfolio"
-      className="z-0 flex flex-col items-center justify-center gap-6"
+      className="z-0 sm:max-h-[1080px]"
       style={{
         height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
       }}
     >
-      <section className="container flex flex-col gap-16">
-        <div className="flex max-w-[980px] flex-col items-start">
-          <PortfolioAnimation />
-          <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
-            A small sample of my recent projects.
-          </p>
-        </div>
-      </section>
-      <EmblaCarousel options={OPTIONS} />
+      <div className="flex h-full flex-col items-center justify-center gap-6 sm:max-h-[1080px] sm:justify-start sm:pt-[8vh]">
+        <section className="container flex flex-col gap-16">
+          <div className="flex max-w-[980px] flex-col items-start sm:gap-2">
+            <PortfolioAnimation />
+            <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
+              A small sample of my recent projects.
+            </p>
+          </div>
+        </section>
+        <EmblaCarousel options={OPTIONS} />
+      </div>
     </div>
   )
 }
