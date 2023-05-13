@@ -11,7 +11,7 @@ export default function Intro() {
     <>
       <section
         id="home"
-        className="z-0 overflow-x-hidden mt-[-65px] flex min-h-screen flex-col justify-center pb-[15px] sm:mt-0 sm:min-h-[calc(100vh-65px)] sm:pb-0"
+        className="z-0 mt-[-65px] flex min-h-screen flex-col justify-center pb-[15px] sm:mt-0 sm:min-h-[calc(100vh-65px)] sm:pb-0"
         style={
           {
             // height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
