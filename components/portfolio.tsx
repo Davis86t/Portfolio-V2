@@ -1,11 +1,14 @@
 import { EmblaOptionsType } from "embla-carousel-react"
-
 import PortfolioAnimation from "./animations/portfolio-animation"
 import { EmblaCarousel } from "./carousel"
 
+type PortfolioProps = {
+  onSelectLink: (url: string) => void;
+};
+
 const OPTIONS: EmblaOptionsType = { loop: true }
 
-export default function Portfolio() {
+const Portfolio: React.FC<PortfolioProps> = ({ onSelectLink }) => {
   return (
     <div
       id="portfolio"
@@ -24,8 +27,11 @@ export default function Portfolio() {
             </p>
           </div>
         </section>
-        <EmblaCarousel options={OPTIONS} />
+        <EmblaCarousel options={OPTIONS} onSelectLink={onSelectLink} />
       </div>
     </div>
   )
 }
+
+export default Portfolio;
+
