@@ -15,9 +15,7 @@ export default function Contact() {
         <div className="flex flex-col items-start">
           <ContactAnimation />
           <p className="max-w-[700px] text-sm text-slate-700 dark:text-slate-400 md:text-xl">
-            This message will be sent to my personal email address. I will not
-            use your email address for any other purpose than to reply to your
-            message.
+            This message will be sent to my personal email address.
           </p>
         </div>
         <ContactForm />
