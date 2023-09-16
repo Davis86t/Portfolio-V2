@@ -21,7 +21,7 @@ export default function AboutMe() {
           <AboutMeAnimation />
           <div className="flex max-h-[55vh] flex-col overflow-scroll rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:m-0 sm:justify-center sm:overflow-auto sm:bg-white sm:p-0 sm:dark:bg-slate-900">
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              Hi, I&apos;m Tanner Davis, a Full Stack Developer with a foundation in electronics. My expertise includes creating web apps with Node.js, Express, React.js, Redux, and Next.js, and managing SQL databases like Postgres. I love taking on tech challenges.
+              Hi, I'm Tanner Davis, a Full Stack Developer with a foundation in electronics. My expertise includes creating web apps with Node.js, Express, React.js, Redux, and Next.js, and managing SQL databases like Postgres. I love taking on tech challenges.
             </p>
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
               Before transitioning to software, I was an electronics technician, ran a home construction business, and worked as a realtor. This diverse background strengthened my problem-solving and management skills, which I'm excited to apply to software development.
