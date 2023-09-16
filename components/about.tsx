@@ -21,32 +21,16 @@ export default function AboutMe() {
           <AboutMeAnimation />
           <div className="flex max-h-[55vh] flex-col overflow-scroll rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:m-0 sm:justify-center sm:overflow-auto sm:bg-white sm:p-0 sm:dark:bg-slate-900">
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              Hi, I&apos;m Tanner Davis, a Full Stack Software Engineer with 5+
-              years of experience in people relations. I specialize in creating
-              innovative solutions using the PERN stack, and I&apos;m always
-              eager to learn new technologies.
+              Hi, I&apos;m Tanner Davis, a Full Stack Developer with a foundation in electronics. My expertise includes creating web apps with Node.js, Express, React.js, Redux, and Next.js, and managing SQL databases like Postgres. I love taking on tech challenges.
             </p>
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              So far, I have extensive experience working with a variety of tech
-              stacks including Node, JavaScript, TypeScript, React, Next,
-              Express, PostgreSQL, Sequelize, HTML, CSS, and Tailwind.
+              Before transitioning to software, I was an electronics technician, ran a home construction business, and worked as a realtor. This diverse background strengthened my problem-solving and management skills, which I'm excited to apply to software development.
             </p>
             <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              I completed{" "}
-              <a
-                href="https://www.fullstackacademy.com/programs/coding-bootcamp"
-                target="_blank"
-                rel="noreferrer"
-                className="underline"
-              >
-                Fullstack Academy&apos;s
-              </a>{" "}
-              Full-Time Software Engineering Immersive program, which provided
-              me with comprehensive training in Full Stack Javascript Web
-              Development, and earned a certificate in Software Engineering.
+              Off the clock, I'm a car enthusiast and PC gamer. These hobbies not only satisfy my curiosity but also help me unwind. My biggest motivation and inspiration is my family.
             </p>
             <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
-              Let&apos;s connect on LinkedIn!
+            Feel free to reach out and connect if you're interested in discussing potential opportunities, the world of software engineering, or just to chat. Thanks for stopping by!
             </p>
           </div>
           <Link
