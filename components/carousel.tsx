@@ -33,6 +33,7 @@ export const EmblaCarousel = (props: PropType) => {
 
   return (
     <div className="embla relative overflow-hidden">
+      <div className="embla__gradient embla__gradient--left absolute inset-y-0 left-0 z-10 w-[15%] bg-gradient-to-r from-white dark:from-slate-900 to-transparent" />
       <div className="embla__viewport   h-fill max-w-[1440px]" ref={emblaRef}>
         <div className="embla__container z-0 flex flex-row  gap-[10px] sm:gap-[20px]">
           <div className="embla__slide min-w-0 flex-[0_0_70%] sm:flex-[0_0_65%]">
@@ -93,6 +94,7 @@ export const EmblaCarousel = (props: PropType) => {
           </div>
         </div>
       </div>
+      <div className="embla__gradient embla__gradient--right absolute inset-y-0 right-0 z-10 w-[15%] bg-gradient-to-l from-white dark:from-slate-900 to-transparent" />
       <button
         className="embla__prev absolute top-[45%] z-10 flex h-[4rem] w-[4rem] cursor-pointer items-center justify-center fill-slate-300 sm:left-[1.6rem]"
         onClick={scrollPrev}
