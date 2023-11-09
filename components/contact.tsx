@@ -3,14 +3,7 @@ import ContactForm from "./ui/form"
 
 export default function Contact() {
   return (
-    <div
-      id="contact"
-      className="z-0 h-screen"
-      style={{
-        height: `calc(100vh - 65px)`
-      //   height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
-      }}
-    >
+    <div id="contact" className="z-0 h-[calc(100dvh-65px)]">
       <section className="container flex h-full flex-col justify-center gap-6 sm:max-h-[1080px]">
         <div className="flex flex-col items-start">
           <ContactAnimation />

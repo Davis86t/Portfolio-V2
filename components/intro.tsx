@@ -11,12 +11,7 @@ export default function Intro() {
     <>
       <section
         id="home"
-        className="z-0 mt-[-65px] flex min-h-screen flex-col justify-center pb-[15px] sm:mt-0 sm:min-h-[calc(100vh-65px)] sm:pb-0"
-        style={
-          {
-            // height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
-          }
-        }
+        className="z-0 mt-[-65px] flex min-h-screen flex-col justify-center pb-[15px] sm:mt-0 sm:min-h-[calc(100dvh-65px)] sm:pb-0"
       >
         <div className=" flex h-full flex-col items-center sm:mb-[100px] sm:pt-[8vh]">
           <section className="container flex h-full flex-col justify-start pt-4 sm:items-start sm:justify-center sm:pt-0">

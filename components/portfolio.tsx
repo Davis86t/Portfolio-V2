@@ -10,14 +10,7 @@ const OPTIONS: EmblaOptionsType = { loop: true }
 
 const Portfolio: React.FC<PortfolioProps> = ({ onSelectLink }) => {
   return (
-    <div
-      id="portfolio"
-      className="z-0 h-screen"
-      style={{
-        height: `calc(100vh - 65px)`,
-        // height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
-      }}
-    >
+    <div id="portfolio" className="z-0 h-[calc(100dvh-65px)]">
       <div className="flex h-full flex-col justify-center gap-6 sm:max-h-[1080px]">
         <section className="container flex flex-col gap-16">
           <div className="flex max-w-[980px] flex-col items-start sm:gap-2">
@@ -34,4 +27,3 @@ const Portfolio: React.FC<PortfolioProps> = ({ onSelectLink }) => {
 }
 
 export default Portfolio;
-

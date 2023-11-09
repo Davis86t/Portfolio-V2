@@ -1,21 +1,12 @@
 import Link from "next/link"
-
 import { siteConfig } from "@/config/site"
 import AboutMeAnimation from "@/components/animations/about-animation"
 import { Icons } from "@/components/icons"
 import { buttonVariants } from "@/components/ui/button"
-import { ScrollArea } from "./ui/scroll-area"
 
 export default function AboutMe() {
   return (
-    <div
-      id="aboutMe"
-      className="z-0 h-screen"
-      style={{
-        height: `calc(100vh - 65px)`,
-        // height: `calc(100vh - 65px - env(safe-area-inset-top) - env(safe-area-inset-bottom))`,
-      }}
-    >
+    <div id="aboutMe" className="z-0 h-[calc(100dvh-65px)]">
       <section className="container flex h-full flex-col justify-center sm:max-h-[1080px]">
         <div className="flex flex-col items-start gap-6 ">
           <AboutMeAnimation />
@@ -30,7 +21,7 @@ export default function AboutMe() {
               Off the clock, I&apos;m a car enthusiast and PC gamer. These hobbies not only satisfy my curiosity but also help me unwind. My biggest motivation and inspiration is my family.
             </p>
             <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
-            Feel free to reach out and connect if you&apos;re interested in discussing potential opportunities, the world of software engineering, or just to chat. Thanks for stopping by!
+              Feel free to reach out and connect if you&apos;re interested in discussing potential opportunities, the world of software engineering, or just to chat. Thanks for stopping by!
             </p>
           </div>
           <Link
