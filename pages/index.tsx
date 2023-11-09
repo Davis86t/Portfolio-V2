@@ -29,6 +29,10 @@ export default function IndexPage() {
     setShowIframe(false)
   }
 
+  const isYouTubeLink = (url: string) => {
+    return url.includes("youtube.com/embed/");
+  };
+
   return (
     <>
       <Head>
@@ -47,28 +51,27 @@ export default function IndexPage() {
       </Layout>
       {showIframe && selectedLink && (
         <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            zIndex: 1000,
-          }}
+          className={`fixed inset-0 z-10 ${isYouTubeLink(selectedLink) ? 'bg-white dark:bg-slate-900' : 'bg-transparent'}`}
+          style={{ zIndex: 1000 }}
         >
           <div className="relative left-0 right-0 top-0 flex justify-between bg-slate-900 px-6">
-            <p className="text-slate-300">You are previewing the demo site.</p>
+            <p className="text-slate-300">You are previewing the demo.</p>
             <button onClick={handleCloseIframe} className="text-slate-300">
               Close
             </button>
           </div>
           <iframe
             src={selectedLink}
-            className="transform- block h-full max-h-full w-full max-w-full overflow-hidden border-0"
-            sandbox="allow-same-origin allow-scripts"
+            className={
+              isYouTubeLink(selectedLink)
+                ? "fixed top-1/2 left-1/2 w-full h-[56.25vw] max-w-[800px] max-h-[450px] transform -translate-x-1/2 -translate-y-1/2 border-0"
+                : "transform- block h-full max-h-full w-full max-w-full overflow-hidden border-0"
+            }
+            sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation"
           ></iframe>
-        </div>
-      )}
+        </div >
+      )
+      }
     </>
   )
 }

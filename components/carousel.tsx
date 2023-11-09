@@ -11,10 +11,17 @@ export const EmblaCarousel = (props: PropType) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
   const handleClick = (url: string) => {
-    if (props.onSelectLink) {
-      props.onSelectLink(url)
+    if (url.includes('github.com')) {
+      // Open GitHub links in a new tab
+      window.open(url, '_blank');
+    } else {
+      // Otherwise, use the onSelectLink to display content in an iframe
+      if (props.onSelectLink) {
+        props.onSelectLink(url);
+      }
     }
-  }
+  };
+
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
@@ -57,7 +64,7 @@ export const EmblaCarousel = (props: PropType) => {
             </div>
           </div>
           <div className="embla__slide min-w-0 flex-[0_0_70%] sm:flex-[0_0_65%]">
-            <div onClick={() => handleClick("https://www.youtube.com/watch?v=8dye6J-wKlc")}>
+            <div onClick={() => handleClick("https://www.youtube.com/embed/8dye6J-wKlc?si=bzbFOOJT86er6XX8")}>
               <img
                 className="hidden max-h-[65vh] rounded-lg border-2 border-slate-300 sm:flex"
                 src="/FP-thumb-landscape.png"
