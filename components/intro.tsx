@@ -30,7 +30,7 @@ export default function Intro() {
             <ButtonAnimation />
           </section>
         </div>
-        <div className="absolute bottom-0">
+        <div className="absolute bottom-0 left-0 right-0 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <DownArrowAnimation />
         </div>
       </section>

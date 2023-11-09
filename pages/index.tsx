@@ -42,7 +42,7 @@ export default function IndexPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="flex h-full flex-col">
+      <div className="flex h-full flex-col mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Intro />
           <Portfolio onSelectLink={handleSelectLink} />
           <AboutMe />
