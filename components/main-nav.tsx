@@ -73,7 +73,7 @@ export function MainNav({ items }: MainNavProps) {
             to="contact"
             spy={true}
             smooth="easeOutQuad"
-            offset={0}
+            offset={-65}
             duration={750}
             className={cn(
               "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
