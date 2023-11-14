@@ -44,7 +44,7 @@ export default function IndexPage() {
         <meta property="og:title" content="Tanner Davis | Software Engineer" />
         <meta property="og:description" content="Welcome to my personal portfolio where I showcase my projects and professional journey." />
         <meta property="og:url" content="https://tannerdavis.io" />
-        <meta property="og:image" content="https://www.tannerdavis.io/Portfolio_OG.png" />
+        <meta property="og:image" content="https://www.tannerdavis.io/Portfolio_OG2.png" />
         <meta property="og:site_name" content="Tanner Davis Portfolio" />
       </Head>
       <Layout>
