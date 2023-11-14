@@ -40,9 +40,15 @@ export default function IndexPage() {
         <meta name="description" content="My Personal Website." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Tanner Davis | Software Engineer" />
+        <meta property="og:description" content="Welcome to my personal portfolio where I showcase my projects and professional journey." />
+        <meta property="og:url" content="https://tannerdavis.io" />
+        <meta property="og:image" content="https://www.tannerdavis.io/Portfolio_OG.png" />
+        <meta property="og:site_name" content="Tanner Davis Portfolio" />
       </Head>
       <Layout>
-      <div className="flex h-full flex-col mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-full flex-col mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Intro />
           <Portfolio onSelectLink={handleSelectLink} />
           <AboutMe />
