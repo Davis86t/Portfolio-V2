@@ -9,6 +9,7 @@ interface SiteConfig {
     linkedin: string
     button1: string
     button2: string
+    resume: string
   }
 }
 
@@ -37,11 +38,17 @@ export const siteConfig: SiteConfig = {
       href: "/#contact",
       replace: true,
     },
+    {
+      title: "Resume",
+      href: "/#resume",
+      replace: true,
+    },
   ],
   links: {
     github: "https://github.com/davis86t",
     linkedin: "https://www.linkedin.com/in/davis86t/",
     button1: "https://www.linkedin.com/in/davis86t/",
     button2: "https://github.com/davis86t",
+    resume: "/Tanner_Davis_Resume.pdf",
   },
 }

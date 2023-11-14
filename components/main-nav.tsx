@@ -81,6 +81,16 @@ export function MainNav({ items }: MainNavProps) {
           >
             Contact
           </Link>
+          <a
+            href={siteConfig.links.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
+            )}
+          >
+            Resume
+          </a>
         </nav>
       ) : null}
       <DropdownMenu>
@@ -144,6 +154,17 @@ export function MainNav({ items }: MainNavProps) {
             >
               <p onClick={onClick}>Contact</p>
             </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <a
+              href={siteConfig.links.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-4xl"
+              onClick={onClick}
+            >
+              Resume
+            </a>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
