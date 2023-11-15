@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for touch hover state */
+a[data-hover="true"] {
+  color: #0f172a; /* Replace with the actual hex value for 'text-slate-900' */
+  @media (prefers-color-scheme: dark) {
+    color: #64748b; /* Replace with the actual hex value for 'dark:text-slate-500' */
+  }
+}

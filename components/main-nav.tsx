@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useRef } from "react"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 import { NavItem } from "@/types/nav"
@@ -20,17 +20,39 @@ interface MainNavProps {
 }
 
 export function MainNav({ items }: MainNavProps) {
-  // State to handle the hover effect
-  const [isHovered, setIsHovered] = useState(false)
+  const resumeLinkRef = useRef(null)
 
-  // Event handler for touch
-  const handleTouch = () => {
-    setIsHovered(true)
-    // Remove hover effect after a short delay
-    setTimeout(() => {
-      setIsHovered(false)
-    }, 150)
-  }
+  useEffect(() => {
+    // Function to remove the hover state
+    const removeHoverState = () => {
+      // Remove the attribute after a delay to simulate hover effect
+      setTimeout(() => {
+        if (resumeLinkRef.current) {
+          resumeLinkRef.current.removeAttribute("data-hover")
+        }
+      }, 500) // Delay in milliseconds
+    }
+
+    // Function to add the hover state
+    const addHoverState = () => {
+      if (resumeLinkRef.current) {
+        resumeLinkRef.current.setAttribute("data-hover", "true")
+      }
+    }
+
+    // Get the current element from the ref
+    const resumeLink = resumeLinkRef.current
+
+    // Add event listeners
+    resumeLink.addEventListener("touchend", removeHoverState)
+    resumeLink.addEventListener("touchstart", addHoverState)
+
+    // Remove event listeners on cleanup
+    return () => {
+      resumeLink.removeEventListener("touchend", removeHoverState)
+      resumeLink.removeEventListener("touchstart", addHoverState)
+    }
+  }, [])
 
   function onClick() {
     document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape" }))
@@ -96,14 +118,8 @@ export function MainNav({ items }: MainNavProps) {
             href={siteConfig.links.resume}
             target="_blank"
             rel="noopener noreferrer"
-            onTouchStart={handleTouch} // Handle touch event
-            className={cn(
-              "flex cursor-pointer items-center text-lg font-semibold",
-              "text-slate-600 dark:text-slate-100 sm:text-sm",
-              {
-                "hover:text-slate-900 dark:hover:text-slate-500": !isHovered,
-              }
-            )}
+            ref={resumeLinkRef}
+            className="flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
           >
             Resume
           </a>
