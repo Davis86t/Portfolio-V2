@@ -11,10 +11,10 @@ export default function Intro() {
     <>
       <section
         id="home"
-        className="z-0 mt-[-65px] flex min-h-screen flex-col justify-center pb-[15px] sm:mt-0 sm:min-h-[calc(100dvh-65px)] sm:pb-0"
+        className="z-0 flex h-[calc(100dvh-65px)] max-h-[900px] min-h-[500px] flex-col border-b border-b-slate-200 py-16 dark:border-b-slate-700"
       >
-        <div className=" flex h-full flex-col items-center sm:mb-[100px] sm:pt-[8vh]">
-          <section className="container flex h-full flex-col justify-start pt-4 sm:items-start sm:justify-center sm:pt-0">
+        <div className="flex max-h-[900px] flex-grow flex-col items-center justify-center">
+          <section className="container flex h-full flex-col justify-center">
             <div className="flex flex-col items-center gap-6 sm:flex-row sm:pb-6 md:pb-0">
               <AvatarAnimation />
               <div className="mb-6 flex max-w-[980px] flex-col items-start pb-1 md:mb-0">
@@ -30,7 +30,7 @@ export default function Intro() {
             <ButtonAnimation />
           </section>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex-end mx-auto w-full">
           <DownArrowAnimation />
         </div>
       </section>
