@@ -2,10 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles for touch hover state */
-a[data-hover="true"] {
-  color: #0f172a; /* Replace with the actual hex value for 'text-slate-900' */
-  @media (prefers-color-scheme: dark) {
-    color: #64748b; /* Replace with the actual hex value for 'dark:text-slate-500' */
+@keyframes temporary-hover-light {
+  0%,
+  100% {
+    color: inherit; /* Use the original light mode color */
+  }
+  50% {
+    color: #0f172a; /* The color you want during the hover in light mode */
+  }
+}
+
+@keyframes temporary-hover-dark {
+  0%,
+  100% {
+    color: inherit; /* Use the original dark mode color */
+  }
+  50% {
+    color: #64748b; /* The color you want during the hover in dark mode */
+  }
+}
+
+/* Light mode class for applying this animation */
+.temporary-hover-effect-light {
+  animation: temporary-hover-light 500ms ease-in-out;
+}
+
+/* Dark mode class for applying this animation */
+@media (prefers-color-scheme: dark) {
+  .temporary-hover-effect-dark {
+    animation: temporary-hover-dark 500ms ease-in-out;
   }
 }
