@@ -1,5 +1,4 @@
-import * as React from "react"
-// import Link from "next/link"
+import React, { useState } from "react"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 import { NavItem } from "@/types/nav"
@@ -21,6 +20,18 @@ interface MainNavProps {
 }
 
 export function MainNav({ items }: MainNavProps) {
+  // State to handle the hover effect
+  const [isHovered, setIsHovered] = useState(false)
+
+  // Event handler for touch
+  const handleTouch = () => {
+    setIsHovered(true)
+    // Remove hover effect after a short delay
+    setTimeout(() => {
+      setIsHovered(false)
+    }, 150)
+  }
+
   function onClick() {
     document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape" }))
   }
@@ -85,8 +96,13 @@ export function MainNav({ items }: MainNavProps) {
             href={siteConfig.links.resume}
             target="_blank"
             rel="noopener noreferrer"
+            onTouchStart={handleTouch} // Handle touch event
             className={cn(
-              "flex cursor-pointer items-center text-lg font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-500 sm:text-sm"
+              "flex cursor-pointer items-center text-lg font-semibold",
+              "text-slate-600 dark:text-slate-100 sm:text-sm",
+              {
+                "hover:text-slate-900 dark:hover:text-slate-500": !isHovered,
+              }
             )}
           >
             Resume
