@@ -11,7 +11,7 @@ export default function Intro() {
     <>
       <section
         id="home"
-        className="z-0 flex h-[calc(100dvh-65px)] max-h-[900px] min-h-[500px] flex-col border-b border-b-slate-200 py-16 dark:border-b-slate-700"
+        className="z-0 flex h-[calc(100dvh-65px)] max-h-[900px] min-h-[500px] flex-col border-b border-b-slate-200 dark:border-b-slate-700 sm:py-16"
       >
         <div className="flex max-h-[900px] flex-grow flex-col items-center justify-center">
           <section className="container flex h-full flex-col justify-center">
