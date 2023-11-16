@@ -11,17 +11,16 @@ export const EmblaCarousel = (props: PropType) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
   const handleClick = (url: string) => {
-    if (url.includes('github.com')) {
+    if (url.includes("github.com")) {
       // Open GitHub links in a new tab
-      window.open(url, '_blank');
+      window.open(url, "_blank")
     } else {
       // Otherwise, use the onSelectLink to display content in an iframe
       if (props.onSelectLink) {
-        props.onSelectLink(url);
+        props.onSelectLink(url)
       }
     }
-  };
-
+  }
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
@@ -33,13 +32,17 @@ export const EmblaCarousel = (props: PropType) => {
 
   return (
     <div className="embla relative overflow-hidden">
-      <div className="embla__gradient embla__gradient--left absolute inset-y-0 left-0 z-10 w-[15%] bg-gradient-to-r from-white dark:from-slate-900 to-transparent" />
-      <div className="embla__viewport   h-fill max-w-[1440px]" ref={emblaRef}>
-        <div className="embla__container z-0 flex flex-row  gap-[10px] sm:gap-[20px]">
-          <div className="embla__slide min-w-0 flex-[0_0_70%] sm:flex-[0_0_65%]">
-            <div onClick={() => handleClick("https://tech-challenge-mu.vercel.app/")}>
+      <div className="embla__gradient embla__gradient--left absolute inset-y-0 left-0 z-10 w-[15%] bg-gradient-to-r from-white to-transparent dark:from-slate-900" />
+      <div className="embla__viewport max-w-[1440px]" ref={emblaRef}>
+        <div className="embla__container z-0 flex flex-row">
+          <div className="embla__slide mr-[20px] flex-[0_0_70%] ">
+            <div
+              onClick={() =>
+                handleClick("https://tech-challenge-mu.vercel.app/")
+              }
+            >
               <img
-                className="hidden max-h-[65vh] rounded-lg border-2 border-slate-500 dark:border-slate-700 sm:flex"
+                className="hidden max-h-[100%] rounded-lg border-2 border-slate-500 dark:border-slate-700 sm:flex"
                 src="/MW-challenge-landscape.png"
                 alt="Midwestern take-home challenge"
               />
@@ -50,10 +53,14 @@ export const EmblaCarousel = (props: PropType) => {
               />
             </div>
           </div>
-          <div className="embla__slide   min-w-0 flex-[0_0_70%] sm:flex-[0_0_65%]">
-            <div onClick={() => handleClick("https://photography-site-inky.vercel.app/")}>
+          <div className="embla__slide mr-[20px] flex-[0_0_70%] ">
+            <div
+              onClick={() =>
+                handleClick("https://photography-site-inky.vercel.app/")
+              }
+            >
               <img
-                className="hidden max-h-[65vh] rounded-lg border-2 border-slate-300 dark:border-slate-700 sm:flex"
+                className="hidden max-h-[100%] rounded-lg border-2 border-slate-300 dark:border-slate-700 sm:flex"
                 src="/Photo-site-landscape.png"
                 alt="Photography site - personal project"
               />
@@ -64,10 +71,16 @@ export const EmblaCarousel = (props: PropType) => {
               />
             </div>
           </div>
-          <div className="embla__slide min-w-0 flex-[0_0_70%] sm:flex-[0_0_65%]">
-            <div onClick={() => handleClick("https://www.youtube.com/embed/8dye6J-wKlc?si=bzbFOOJT86er6XX8")}>
+          <div className="embla__slide mr-[20px] flex-[0_0_70%] ">
+            <div
+              onClick={() =>
+                handleClick(
+                  "https://www.youtube.com/embed/8dye6J-wKlc?si=bzbFOOJT86er6XX8"
+                )
+              }
+            >
               <img
-                className="hidden max-h-[65vh] rounded-lg border-2 border-slate-300 sm:flex"
+                className="hidden max-h-[100%] rounded-lg border-2 border-slate-300 sm:flex"
                 src="/FP-thumb-landscape.png"
                 alt="Family Plan mobile app - group project"
               />
@@ -78,10 +91,14 @@ export const EmblaCarousel = (props: PropType) => {
               />
             </div>
           </div>
-          <div className="embla__slide mr-[10px] min-w-0 flex-[0_0_70%] sm:mr-[20px] sm:flex-[0_0_65%]">
-            <div onClick={() => handleClick("https://github.com/2208-FSA/chips-n-plants")}>
+          <div className="embla__slide mr-[20px] flex-[0_0_70%]">
+            <div
+              onClick={() =>
+                handleClick("https://github.com/2208-FSA/chips-n-plants")
+              }
+            >
               <img
-                className="hidden max-h-[65vh] rounded-lg border-2 border-slate-200 sm:flex"
+                className="hidden max-h-[100%] rounded-lg border-2 border-slate-200 sm:flex"
                 src="/CP-thumb-landscape.png"
                 alt="E-commerce site - group project"
               />
@@ -94,10 +111,11 @@ export const EmblaCarousel = (props: PropType) => {
           </div>
         </div>
       </div>
-      <div className="embla__gradient embla__gradient--right absolute inset-y-0 right-0 z-10 w-[15%] bg-gradient-to-l from-white dark:from-slate-900 to-transparent" />
+      <div className="embla__gradient embla__gradient--right absolute inset-y-0 right-0 z-10 w-[15%] bg-gradient-to-l from-white to-transparent dark:from-slate-900" />
       <button
         className="embla__prev absolute top-[45%] z-10 flex h-[4rem] w-[4rem] cursor-pointer items-center justify-center fill-slate-300 sm:left-[1.6rem]"
         onClick={scrollPrev}
+        aria-label="Previous Project"
       >
         <svg
           className="embla__button__svg h-[65%] w-[65%]"
@@ -109,6 +127,7 @@ export const EmblaCarousel = (props: PropType) => {
       <button
         className="embla__next absolute right-[0px] top-[45%] z-10 flex h-[4rem] w-[4rem]  cursor-pointer items-center justify-center fill-slate-300 sm:right-[1.6rem]"
         onClick={scrollNext}
+        aria-label="Next Project"
       >
         <svg
           className="embla__button__svg h-[65%] w-[65%]"
