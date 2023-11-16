@@ -5,7 +5,7 @@
 @keyframes temporary-hover-light {
   0%,
   100% {
-    color: inherit; /* Use the original light mode color */
+    color: #475569; /* Use the original light mode color */
   }
   50% {
     color: #0f172a; /* The color you want during the hover in light mode */
@@ -15,7 +15,7 @@
 @keyframes temporary-hover-dark {
   0%,
   100% {
-    color: inherit; /* Use the original dark mode color */
+    color: #f1f5f9; /* Use the original dark mode color */
   }
   50% {
     color: #64748b; /* The color you want during the hover in dark mode */
@@ -28,8 +28,6 @@
 }
 
 /* Dark mode class for applying this animation */
-@media (prefers-color-scheme: dark) {
-  .temporary-hover-effect-dark {
-    animation: temporary-hover-dark 500ms ease-in-out;
-  }
+.temporary-hover-effect-dark {
+  animation: temporary-hover-dark 500ms ease-in-out;
 }

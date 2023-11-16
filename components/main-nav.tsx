@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { useTheme } from "next-themes"
 import { Link } from "react-scroll"
 
 import { NavItem } from "@/types/nav"
@@ -24,26 +25,12 @@ const navItems = [
 ]
 
 export function MainNav({ items }: MainNavProps) {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const { theme } = useTheme()
 
-  useEffect(() => {
-    const matchDarkMediaQuery = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    )
-
-    const handleChange = (event) => {
-      setIsDarkMode(event.matches)
-    }
-
-    // Listen for changes using addEventListener
-    matchDarkMediaQuery.addEventListener("change", handleChange)
-
-    // Set the initial state based on the current color scheme
-    setIsDarkMode(matchDarkMediaQuery.matches)
-
-    // Clean up with removeEventListener
-    return () => matchDarkMediaQuery.removeEventListener("change", handleChange)
-  }, [])
+  const hoverClassName =
+    theme === "dark"
+      ? "temporary-hover-effect-dark"
+      : "temporary-hover-effect-light"
 
   function onClick() {
     document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape" }))
@@ -62,16 +49,16 @@ export function MainNav({ items }: MainNavProps) {
               smooth="easeOutQuad"
               offset={-65}
               duration={750}
-              onMouseEnter={(e) =>
-                e.currentTarget.classList.add(
-                  isDarkMode
-                    ? "temporary-hover-effect-dark"
-                    : "temporary-hover-effect-light"
-                )
-              }
+              onMouseEnter={(e) => {
+                e.currentTarget.classList.add(hoverClassName)
+                console.log(`Hover effect applied: ${hoverClassName}`)
+              }}
               onAnimationEnd={(e) => {
-                e.currentTarget.classList.remove("temporary-hover-effect-light")
-                e.currentTarget.classList.remove("temporary-hover-effect-dark")
+                e.currentTarget.classList.remove(
+                  "temporary-hover-effect-light",
+                  "temporary-hover-effect-dark"
+                )
+                console.log(`Hover effect applied: ${hoverClassName}`)
               }}
               className="flex cursor-pointer items-center text-lg font-semibold text-slate-600 dark:text-slate-100 sm:text-sm"
             >
@@ -82,16 +69,16 @@ export function MainNav({ items }: MainNavProps) {
             href={siteConfig.links.resume}
             target="_blank"
             rel="noopener noreferrer"
-            onMouseEnter={(e) =>
-              e.currentTarget.classList.add(
-                isDarkMode
-                  ? "temporary-hover-effect-dark"
-                  : "temporary-hover-effect-light"
-              )
-            }
+            onMouseEnter={(e) => {
+              e.currentTarget.classList.add(hoverClassName)
+              console.log(`Hover effect applied: ${hoverClassName}`)
+            }}
             onAnimationEnd={(e) => {
-              e.currentTarget.classList.remove("temporary-hover-effect-light")
-              e.currentTarget.classList.remove("temporary-hover-effect-dark")
+              e.currentTarget.classList.remove(
+                "temporary-hover-effect-light",
+                "temporary-hover-effect-dark"
+              )
+              console.log(`Hover effect applied: ${hoverClassName}`)
             }}
             className="flex cursor-pointer items-center text-lg font-semibold text-slate-600 dark:text-slate-100 sm:text-sm"
           >
