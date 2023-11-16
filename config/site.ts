@@ -20,27 +20,26 @@ export const siteConfig: SiteConfig = {
   mainNav: [
     {
       title: "Home",
+      to: "home",
       href: "/",
       replace: false,
     },
     {
       title: "Portfolio",
+      to: "portfolio",
       href: "/#portfolio",
       replace: true,
     },
     {
       title: "About Me",
+      to: "aboutMe",
       href: "/#aboutMe",
       replace: true,
     },
     {
       title: "Contact",
+      to: "contact",
       href: "/#contact",
-      replace: true,
-    },
-    {
-      title: "Resume",
-      href: "/#resume",
       replace: true,
     },
   ],

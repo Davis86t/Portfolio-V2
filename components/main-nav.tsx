@@ -17,75 +17,96 @@ interface MainNavProps {
   items?: NavItem[]
 }
 
-const navItems = [
-  { to: "home", label: "Home" },
-  { to: "portfolio", label: "Portfolio" },
-  { to: "aboutMe", label: "About Me" },
-  { to: "contact", label: "Contact" },
-]
-
 export function MainNav({ items }: MainNavProps) {
+  // useTheme is a hook for handling theme changes in next-themes
   const { theme } = useTheme()
+  // Local state to store the theme based on system preference
+  const [systemTheme, setSystemTheme] = useState(null)
 
+  // Effect hook to detect and synchronize with the system theme
+  useEffect(() => {
+    // System theme detection is relevant when the theme is set to 'system'
+    if (theme === "system") {
+      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
+      const handleSystemThemeChange = (e) => {
+        // Update local state based on system theme
+        setSystemTheme(e.matches ? "dark" : "light")
+      }
+
+      // Add event listener for changes to the system theme preference
+      mediaQuery.addEventListener("change", handleSystemThemeChange)
+      // Set the initial value
+      handleSystemThemeChange(mediaQuery)
+
+      // Clean up event listener when component unmounts or theme changes
+      return () => {
+        mediaQuery.removeEventListener("change", handleSystemThemeChange)
+      }
+    } else {
+      // Directly use the theme if it's not set to 'system'
+      setSystemTheme(theme)
+    }
+  }, [theme])
+
+  /// Function to determine the hover class based on the current theme
   const hoverClassName =
-    theme === "dark"
+    systemTheme === "dark"
       ? "temporary-hover-effect-dark"
       : "temporary-hover-effect-light"
 
-  function onClick() {
+  // Function to close dropdown menu on mobile
+  function closeMenu() {
+    // Simulate an 'Escape' keydown event to close the dropdown menu
     document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape" }))
   }
 
   return (
     <div className="flex gap-6 md:gap-10">
-      {items?.length ? (
-        <nav className="hidden gap-6 md:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.to}
-              activeClass="border-b-2 border-slate-600"
-              to={item.to}
-              spy={true}
-              smooth="easeOutQuad"
-              offset={-65}
-              duration={750}
-              onMouseEnter={(e) => {
-                e.currentTarget.classList.add(hoverClassName)
-                console.log(`Hover effect applied: ${hoverClassName}`)
-              }}
-              onAnimationEnd={(e) => {
-                e.currentTarget.classList.remove(
-                  "temporary-hover-effect-light",
-                  "temporary-hover-effect-dark"
-                )
-                console.log(`Hover effect applied: ${hoverClassName}`)
-              }}
-              className="flex cursor-pointer items-center text-lg font-semibold text-slate-600 dark:text-slate-100 sm:text-sm"
-            >
-              {item.label}
-            </Link>
-          ))}
-          <a
-            href={siteConfig.links.resume}
-            target="_blank"
-            rel="noopener noreferrer"
+      <nav className="hidden gap-6 md:flex">
+        {/* Dynamically generate navigation links */}
+        {items.map((item) => (
+          <Link
+            key={item.to}
+            activeClass="border-b-2 border-slate-600"
+            to={item.to}
+            spy={true}
+            smooth="easeOutQuad"
+            offset={-65}
+            duration={750}
             onMouseEnter={(e) => {
               e.currentTarget.classList.add(hoverClassName)
-              console.log(`Hover effect applied: ${hoverClassName}`)
             }}
             onAnimationEnd={(e) => {
               e.currentTarget.classList.remove(
                 "temporary-hover-effect-light",
                 "temporary-hover-effect-dark"
               )
-              console.log(`Hover effect applied: ${hoverClassName}`)
             }}
             className="flex cursor-pointer items-center text-lg font-semibold text-slate-600 dark:text-slate-100 sm:text-sm"
           >
-            Resume
-          </a>
-        </nav>
-      ) : null}
+            {item.title}
+          </Link>
+        ))}
+        {/* Resume link */}
+        <a
+          href={siteConfig.links.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          onMouseEnter={(e) => {
+            e.currentTarget.classList.add(hoverClassName)
+          }}
+          onAnimationEnd={(e) => {
+            e.currentTarget.classList.remove(
+              "temporary-hover-effect-light",
+              "temporary-hover-effect-dark"
+            )
+          }}
+          className="flex cursor-pointer items-center text-lg font-semibold text-slate-600 dark:text-slate-100 sm:text-sm"
+        >
+          Resume
+        </a>
+      </nav>
+      {/* Mobile navigation dropdown */}
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
@@ -100,7 +121,8 @@ export function MainNav({ items }: MainNavProps) {
           sideOffset={-5}
           className="z-40 ml-[-8px] mt-[-47px] flex h-[100vh] w-[75vw] flex-col justify-center pl-6 md:hidden"
         >
-          {navItems.map((item) => (
+          {/* Dropdown menu items */}
+          {items.map((item) => (
             <DropdownMenuItem key={item.to}>
               <Link
                 to={item.to}
@@ -109,18 +131,19 @@ export function MainNav({ items }: MainNavProps) {
                 offset={-65}
                 duration={750}
                 className="text-4xl"
+                onClick={closeMenu}
               >
-                <p onClick={onClick}>{item.label}</p>
+                {item.title}
               </Link>
             </DropdownMenuItem>
           ))}
-          <DropdownMenuItem>
+          {/* Dropdown resume link */}
+          <DropdownMenuItem onClick={closeMenu}>
             <a
               href={siteConfig.links.resume}
               target="_blank"
               rel="noopener noreferrer"
               className="text-4xl"
-              onClick={onClick}
             >
               Resume
             </a>

@@ -28,6 +28,8 @@
 }
 
 /* Dark mode class for applying this animation */
-.temporary-hover-effect-dark {
-  animation: temporary-hover-dark 500ms ease-in-out;
+@media (prefers-color-scheme: dark) {
+  .temporary-hover-effect-dark {
+    animation: temporary-hover-dark 500ms ease-in-out;
+  }
 }
