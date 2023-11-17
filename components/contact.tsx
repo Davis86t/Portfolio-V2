@@ -10,8 +10,10 @@ export default function Contact() {
       <section className="container flex h-full flex-col justify-center gap-6">
         <div className="flex flex-col items-start">
           <ContactAnimation />
-          <p className="max-w-[700px] text-sm text-slate-700 dark:text-slate-400 md:text-xl">
-            This message will be sent to my personal email address.
+          <p className="max-w-[700px] pt-3 text-sm text-slate-700 dark:text-slate-400 md:text-xl">
+            Enter your email below and let&apos;s start a conversation. Your
+            message will be sent straight to my inbox, and I&apos;ll be in
+            touch.
           </p>
         </div>
         <ContactForm />
