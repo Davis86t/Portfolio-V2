@@ -35,7 +35,7 @@ export default function AboutMe() {
 
             <p className="text-md max-w-[700px] pt-4 text-slate-700 dark:text-slate-400 md:text-xl">
               Ready to bring my diverse expertise to your tech challenges?
-              Let&apos;s connect:
+              Let&apos;s connect!
             </p>
           </div>
           <div className="flex w-full justify-center sm:justify-start">
