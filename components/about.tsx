@@ -14,36 +14,43 @@ export default function AboutMe() {
       <section className="container flex h-full flex-col justify-center">
         <div className="flex flex-col items-start gap-6 ">
           <AboutMeAnimation />
-          <div className="flex min-h-[400px] flex-col overflow-scroll rounded-lg bg-slate-100 p-4 dark:bg-slate-800 sm:m-0 sm:justify-center sm:overflow-auto sm:bg-white sm:p-0 sm:dark:bg-slate-900">
-            <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              As a developer who transitioned from electronics and real estate
-              to software, I bring a unique perspective to web app development.
-              My technical stack includes Node.js, Express, React.js, Redux, and
-              Next.js, with proficiency in SQL databases like Postgres.
-            </p>
-            <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              My past experiences have sharpened my problem-solving abilities,
-              and I apply this methodical approach to developing efficient,
-              robust software solutions.
-            </p>
-            <p className="text-md max-w-[700px] pb-3 text-slate-700 dark:text-slate-400 md:text-xl">
-              In my downtime, I pursue interests in cars and PC gaming, which
-              help maintain my detail-oriented nature.
-            </p>
+          <div className="flex min-h-[400px] flex-col overflow-auto rounded-lg bg-white p-4 dark:bg-slate-900 sm:m-0 sm:justify-center sm:p-0">
+            <ul className="max-w-[700px] list-disc space-y-2 pb-6 pl-5 text-slate-700 dark:text-slate-400 md:text-xl">
+              <li>
+                Transitioned from electronics and real estate to crafting web
+                apps.
+              </li>
+              <li>
+                Proficient in Node.js, Express, React.js, Redux, Next.js, and
+                SQL databases.
+              </li>
+              <li>
+                Methodical problem-solver focused on efficient and robust
+                solutions.
+              </li>
+              <li>
+                Car enthusiast and PC gamer, sharpening my attention to detail.
+              </li>
+            </ul>
+
             <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
-              Interested in a developer who values substance and simplicity?
-              Let&apos;s connect.
+              Ready to bring my diverse expertise to your tech challenges? Let's
+              connect:
             </p>
           </div>
-          <Link
-            href={siteConfig.links.button1}
-            target="_blank"
-            rel="noreferrer"
-            className={buttonVariants({ size: "custom" })}
-          >
-            <Icons.linkedin className="h-5 w-5 fill-current" />
-            <span className="sr-only">LinkedIn</span>
-          </Link>
+          <div className="flex w-full justify-center sm:justify-start">
+            <Link
+              href={siteConfig.links.button1}
+              target="_blank"
+              rel="noreferrer"
+              className={`${buttonVariants({
+                size: "custom",
+              })} inline-flex items-center`}
+            >
+              <Icons.linkedin className="h-5 w-5 fill-current" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
