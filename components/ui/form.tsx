@@ -79,7 +79,7 @@ export default function ContactForm() {
         </Form.Control>
         <input type="hidden" name="_gotcha" className="!hidden"></input>
       </Form.Field>
-      <Form.Field className="mb-[10px] grid" name="message">
+      <Form.Field className="mb-[20px] grid" name="message">
         <div className="flex items-baseline justify-between">
           <Form.Label className="text-[15px] font-medium leading-[35px] text-slate-600 dark:text-slate-100">
             Message
