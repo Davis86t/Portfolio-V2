@@ -34,7 +34,7 @@ export default function AboutMe() {
             </ul>
 
             <p className="text-md max-w-[700px] text-slate-700 dark:text-slate-400 md:text-xl">
-              Ready to bring my diverse expertise to your tech challenges? Let's
+              Ready to bring my diverse expertise to your tech challenges? Let&apos;s
               connect:
             </p>
           </div>
