@@ -16,7 +16,7 @@ interface SiteConfig {
 export const siteConfig: SiteConfig = {
   name: "Tanner Davis",
   description:
-    "Tanner Davis' personal website. I'm a software engineer and I love to build things.",
+    "Tanner Davis' personal website. I'm a Web Developer and I love to build things.",
   mainNav: [
     {
       title: "Home",
