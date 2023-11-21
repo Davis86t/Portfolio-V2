@@ -23,7 +23,7 @@ export default function Typewriters() {
               // .typeString("Leader")
               // .pauseFor(500)
               // .deleteChars(6)
-              .typeString("Web Developer")
+              .typeString("Software Developer")
               .pauseFor(1500)
               .start()
           }}
