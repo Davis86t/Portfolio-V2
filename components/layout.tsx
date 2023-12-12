@@ -1,5 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
 import { SiteHeader } from "@/components/site-header"
 
 interface LayoutProps {
@@ -10,10 +8,7 @@ export function Layout({ children }: LayoutProps) {
   return (
     <>
       <SiteHeader />
-      <main>
-        {children}
-        <SpeedInsights />
-      </main>
+      <main>{children}</main>
     </>
   )
 }
